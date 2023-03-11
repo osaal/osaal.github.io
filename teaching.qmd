@@ -2,9 +2,9 @@
 title: "Teaching"
 ---
 
-These pages will contain my teaching.
+These pages contain summaries of my teaching experience, materials, pedagogical projects, and other related musings.
 
-Finnish courses are divided into three levels:
+University courses in Finland are divided into three levels:
 
 1.  Basic: Introductory courses, as part of short minor subject (25 ECTS) or first- through third-year major studies, typically Bachelor level students.
 2.  Intermediate: More in-depth courses, as part of long minor subject (50-70 ECTS) or second- and third-year major studies, typically Bachelor level students.

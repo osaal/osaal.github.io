@@ -1,24 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "Links to contact me:\n\nE-mail\nTwitter\nGitHub\nORCID\nAboCRIS research portal\n\nQuick description of the website."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Oliver Saal",
     "section": "",
-    "text": "Twitter\n  \n  \n    \n     GitHub\n  \n  \n    \n     ORCID\n  \n\n  \n  \nOliver Saal is a sociologist specialising in Science and Technology Studies, and the phenomenology of scientific disciplines. His academic interests also include quantitative analysis, especially network and latent factor models, and Higher Education studies. His free time is spent watching RuPaul’s Drag Race and producing documentary films.\n\n\nÅbo Akademi University | Turku, Finland  D.Soc.Sc. in Sociology | 2020 - current  M.Soc.Sc. in Sociology | 2018 - 2020  B.Soc.Sc. in Sociology | 2015 - 2018\n\n\n\nSee link."
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "Oliver Saal",
-    "section": "Education",
-    "text": "Education\nDoctor of Social Sciences, Sociology  Åbo Akademi University, Sociological Unit  2020 - current\nMaster of Social Sciences, Sociology  Åbo Akademi University, Sociological Unit  2018 - 2020\nBachelor of Social Sciences, Sociology (Minor: English Language and Literature)  Åbo Akademi University, Sociological Unit  2015 - 2018"
+    "text": "Twitter\n  \n  \n    \n     GitHub\n  \n  \n    \n     ORCID\n  \n\n  \n  \nOliver Saal is a sociologist specialising in Science and Technology Studies, and the phenomenology of scientific disciplines. His academic interests also include quantitative analysis, especially network and latent factor models, and Higher Education studies. His free time is spent watching RuPaul’s Drag Race and producing documentary films.\n\n\nÅbo Akademi University | Turku, Finland  D.Soc.Sc. in Sociology | 2020 - current  M.Soc.Sc. in Sociology | 2018 - 2020  B.Soc.Sc. in Sociology | 2015 - 2018\n\n\n\nResearch  Teaching"
   },
   {
     "objectID": "about.html#experience",
@@ -42,13 +28,6 @@
     "text": "Civil Society\nFinnish Union of University Researchers | Helsinki, Finland  Member of the Young Researchers Committee (2023)\nThe Sociological Association at Åbo Akademi University | Turku, Finland  Chair of the board (2020, 2023)  Member of the anniversary gala committee (2021)  Secretary and PR manager (2019) \nPorvoo Youth Council1 | Porvoo, Finland  Elected youth council member, constituency Borgå Gymnasium (2015)  Youth representative in the Porvoo municipal council Swedish educational section (2015)"
   },
   {
-    "objectID": "about.html#other",
-    "href": "about.html#other",
-    "title": "Oliver Saal",
-    "section": "Other",
-    "text": "Other\nMember of the documentary production group Pakopiste Productions2 (2020 - current)  Lecturer in English and German language at Borgå Gymnasium3 upper comprehensive school, single lectures (2016)  Freelancer in video production (2015 - 2021)"
-  },
-  {
     "objectID": "about.html#technical-skills",
     "href": "about.html#technical-skills",
     "title": "Oliver Saal",
@@ -56,18 +35,18 @@
     "text": "Technical Skills\nProgramming: R | Java | Python | HTML | CSS\nMedia production: Photoshop | Lightroom | Premiere Pro | After Effects | Audition | DaVinci Resolve\nStatistical software: SPSS | R | Excel | FACTOR | GraphViz | SocNetV"
   },
   {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "These pages will contain my teaching.\nFinnish courses are divided into three levels:"
+    "objectID": "about.html#other",
+    "href": "about.html#other",
+    "title": "Oliver Saal",
+    "section": "Other",
+    "text": "Other\nMember of the documentary production group Pakopiste Productions2 (2020 - current)  Lecturer in English and German language at Borgå Gymnasium3 upper comprehensive school, single lectures (2016)  Freelancer in video production (2015 - 2021)"
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
     "section": "",
-    "text": "These pages contain my research, with publication links and other contents as available. Data will be added when possible.\nPlease reference the original sources, not this website."
+    "text": "This is me in 2018! I actually wear glasses.\n\n\nWelcome to my homepage! I am Oliver, a sociologist and graduate researcher at Åbo Akademi University in Turku, Finland.\nNavigate the pages through the top bar and the page-specific sidebars. A search function is available in the top-right corner.\nThis webpage is built using Quarto, with the flatly Bootswatch theme. It is hosted on GitHub Pages.\nContact me via the links in the top right-hand corner!"
   },
   {
     "objectID": "mathesis.html",
@@ -77,11 +56,11 @@
     "text": "Title: Legitimating Academic Practice: Mapping the Diversity of Epistemic Logics in Finnish University Disciplines  Year: 2020  University: Åbo Akademi University  Supervisor: Docent, senior lecturer Mika Helander, Åbo Akademi University  Keywords: Legitimation Code Theory, university socialization, academic disciplines, epistemic logic, internal and external explanations, code homology  Permalink: https://urn.fi/URN:NBN:fi-fe202002286885\nAbstract:  In the 2010s, the idea of the ‘post-truth’ society and the weakening of traditional knowledge institutions have become more commonplace. This discourse assumes a unified institutional academic science. In this thesis, I question whether the academic institution, in the Finnish context, is as unified as this discourse assumes. Using an online survey study, I apply Legitimation Code Theory as a perspective to take apart and analyse claims of knowledge legitimation among Finnish university students (n = 559). I thus analyse whether there are differences in Specialization codes between academic disciplines and whether these potential differences are caused by internal or external mechanisms such as social and educational background or university socialization. The results suggest that academic disciplines differ considerably in their underlying epistemic logics. While there are homologous disciplinary clusters on the highest level of analysis, applying an extension of the 4-K model from LCT causes these homologies to break down. The disciplines seem to tend towards extreme modes of knowledge legitimation. Simultaneously, however, differences between disciplines are found in epistemological details. This suggests that Finnish academia shares a common ontological base but differs in each discipline’s epistemological logic. The results further showed that students’ time at university is not a significant predictor of change in epistemic logics, contradicting prior research. However, this contradiction is uncertain due to bias and potential sampling error. Parental educational level predicts a significant change in legitimation codes, but this effect only holds for students with one or more doctoral-level parents and is not attributable to single legitimation code dimensions, suggesting an emergent property. Minority group membership is not a significant predictor of code difference, but this result may be due to model bias. The relevance of the extended 4-K model seems to depend on the purpose of classification, and further qualitative research is necessary to establish the details of the academic socialization process.\nData source: Coming soon!"
   },
   {
-    "objectID": "teaching.html#teaching-experience",
-    "href": "teaching.html#teaching-experience",
-    "title": "Teaching",
-    "section": "Teaching Experience",
-    "text": "Teaching Experience\n\nTaught courses\nAdvanced Sociological Theory 1: Science and Technology Studies. Period II/22. Åbo Akademi University. 5 ECTS. Link to curriculum\n\n\nLectures and workshops\n2022\nHow to Choose Statistical Method? Advanced Sociological Methods 2. Advanced level. Åbo Akademi University.\nStatistical Inference. Advanced Sociological Methods 2. Advanced level. Åbo Akademi University.\nWorkshop in Statistical Inference. Advanced Sociological Methods 2. Advanced level. Åbo Akademi University.\nSociology of Education. Basic Course in Sociology: Society’s Structures and Institutions. Basic level. Åbo Akademi University.\n2021\nWho Researches the Researcher? Science Studies and Knowledge Practices at the Finnish University. Current Sociological Research. Basic level. Åbo Akademi University.\nLogistic Regression. Advanced Sociological Methods: Quantitative Methods. Advanced level. Åbo Akademi University.\nGeneral Linear Models and OLS Regression. Advanced Sociological Methods: Quantitative Methods. Advanced level. Åbo Akademi University.\nStatistical Inference. Advanced Sociological Methods: Quantitative Methods. Advanced level. Åbo Akademi University.\n2020\nWho Researches the Researcher? Science Studies and Knowledge Practices at the Finnish University. Current Sociological Research. Basic level. Åbo Akademi University.\nGeneral Linear Models. Advanced Sociological Methods: Quantitative Methods. Advanced level. Åbo Akademi University.\nStatistical Inference. Advanced Sociological Methods: Quantitative Methods. Advanced level. Åbo Akademi University.\nGroup workshops. Basic Course in Sociology: The Individual and Society. Basic level. Åbo Akademi University.\nBias Analysis in OLS Regression. Workshop. Åbo Akademi University, Sociological Unit.\n2019\nGeneral Linear Models. Advanced Sociological Methods: Quantitative Methods. Advanced level. Åbo Akademi University.\nGroup workshops. Basic Course in Sociology: The Individual and Society. Basic level. Åbo Akademi University.\n\n\nFormal Pedagogical Education\nPedagogy for Subject Teachers (20 ECTS):\n\nPedagogical Psychology (5 ECTS, 2016)\nApplied Pedagogy and Societal Development (5 ECTS, 2015)\nDidactics (5 ECTS, 2015)\nSpecial Needs Education (5 ECTS, 2015)"
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "These pages contain my research, with publication links and other contents as available. Data will be added when possible.\nPlease reference the original sources, not this website."
   },
   {
     "objectID": "research.html#current-research-projects",
@@ -110,5 +89,19 @@
     "title": "Research",
     "section": "Research Financing",
     "text": "Research Financing\n\nKone Foundation | Personal working grant for doctoral thesis in Sociology. 3.5 years (full-time). Awarded in 2021.\nWaldemar von Frenckell Foundation | Personal working grant for doctoral thesis in Sociology. 5 months (full-time). Awarded in 2021."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "These pages contain summaries of my teaching experience, materials, pedagogical projects, and other related musings.\nUniversity courses in Finland are divided into three levels:"
+  },
+  {
+    "objectID": "teaching.html#teaching-experience",
+    "href": "teaching.html#teaching-experience",
+    "title": "Teaching",
+    "section": "Teaching Experience",
+    "text": "Teaching Experience\n\nTaught courses\nAdvanced Sociological Theory 1: Science and Technology Studies. Period II/22. Åbo Akademi University. 5 ECTS. Link to curriculum\n\n\nLectures and workshops\n2022\nHow to Choose Statistical Method? Advanced Sociological Methods 2. Advanced level. Åbo Akademi University.\nStatistical Inference. Advanced Sociological Methods 2. Advanced level. Åbo Akademi University.\nWorkshop in Statistical Inference. Advanced Sociological Methods 2. Advanced level. Åbo Akademi University.\nSociology of Education. Basic Course in Sociology: Society’s Structures and Institutions. Basic level. Åbo Akademi University.\n2021\nWho Researches the Researcher? Science Studies and Knowledge Practices at the Finnish University. Current Sociological Research. Basic level. Åbo Akademi University.\nLogistic Regression. Advanced Sociological Methods: Quantitative Methods. Advanced level. Åbo Akademi University.\nGeneral Linear Models and OLS Regression. Advanced Sociological Methods: Quantitative Methods. Advanced level. Åbo Akademi University.\nStatistical Inference. Advanced Sociological Methods: Quantitative Methods. Advanced level. Åbo Akademi University.\n2020\nWho Researches the Researcher? Science Studies and Knowledge Practices at the Finnish University. Current Sociological Research. Basic level. Åbo Akademi University.\nGeneral Linear Models. Advanced Sociological Methods: Quantitative Methods. Advanced level. Åbo Akademi University.\nStatistical Inference. Advanced Sociological Methods: Quantitative Methods. Advanced level. Åbo Akademi University.\nGroup workshops. Basic Course in Sociology: The Individual and Society. Basic level. Åbo Akademi University.\nBias Analysis in OLS Regression. Workshop. Åbo Akademi University, Sociological Unit.\n2019\nGeneral Linear Models. Advanced Sociological Methods: Quantitative Methods. Advanced level. Åbo Akademi University.\nGroup workshops. Basic Course in Sociology: The Individual and Society. Basic level. Åbo Akademi University.\n\n\nFormal Pedagogical Education\nPedagogy for Subject Teachers (20 ECTS):\n\nPedagogical Psychology (5 ECTS, 2016)\nApplied Pedagogy and Societal Development (5 ECTS, 2015)\nDidactics (5 ECTS, 2015)\nSpecial Needs Education (5 ECTS, 2015)"
   }
 ]

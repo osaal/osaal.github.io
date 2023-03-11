@@ -27,7 +27,8 @@ M.Soc.Sc. in Sociology | 2018 - 2020 <br/>
 B.Soc.Sc. in Sociology | 2015 - 2018
 
 ## Academic Achievements
-See link.
+[Research](research.qmd) <br/>
+[Teaching](teaching.qmd)
 
 :::
 
