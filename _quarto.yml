@@ -15,6 +15,13 @@ website:
         file: research.qmd
       - text: "Teaching"
         file: teaching.qmd
+    right:
+      - icon: twitter
+        href: https://twitter.com/ollisaal
+      - icon: github
+        href: https://github.com/osaal
+      - icon: envelope
+        href: mailto:oliver.saal@abo.fi
   
   sidebar:
     - title: "Me"
