@@ -1,0 +1,14 @@
+---
+title: "Master's Thesis"
+---
+**Title**: Legitimating Academic Practice: Mapping the Diversity of Epistemic Logics in Finnish University Disciplines <br/>
+**Year**: 2020 <br/>
+**University**: Åbo Akademi University <br/>
+**Supervisor**: Docent, senior lecturer [Mika Helander](https://users.abo.fi/miheland/index.htm), Åbo Akademi University <br/>
+**Keywords**: Legitimation Code Theory, university socialization, academic disciplines, epistemic logic, internal and external explanations, code homology <br/>
+**Permalink**: <https://urn.fi/URN:NBN:fi-fe202002286885>
+
+**Abstract**: <br/>
+In the 2010s, the idea of the ‘post-truth’ society and the weakening of traditional knowledge institutions have become more commonplace. This discourse assumes a unified institutional academic science. In this thesis, I question whether the academic institution, in the Finnish context, is as unified as this discourse assumes. Using an online survey study, I apply Legitimation Code Theory as a perspective to take apart and analyse claims of knowledge legitimation among Finnish university students (n = 559). I thus analyse whether there are differences in Specialization codes between academic disciplines and whether these potential differences are caused by internal or external mechanisms such as social and educational background or university socialization. The results suggest that academic disciplines differ considerably in their underlying epistemic logics. While there are homologous disciplinary clusters on the highest level of analysis, applying an extension of the 4-K model from LCT causes these homologies to break down. The disciplines seem to tend towards extreme modes of knowledge legitimation. Simultaneously, however, differences between disciplines are found in epistemological details. This suggests that Finnish academia shares a common ontological base but differs in each discipline’s epistemological logic. The results further showed that students’ time at university is not a significant predictor of change in epistemic logics, contradicting prior research. However, this contradiction is uncertain due to bias and potential sampling error. Parental educational level predicts a significant change in legitimation codes, but this effect only holds for students with one or more doctoral-level parents and is not attributable to single legitimation code dimensions, suggesting an emergent property. Minority group membership is not a significant predictor of code difference, but this result may be due to model bias. The relevance of the extended 4-K model seems to depend on the purpose of classification, and further qualitative research is necessary to establish the details of the academic socialization process.
+
+**Data source**: Coming soon!

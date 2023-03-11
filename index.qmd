@@ -1,5 +1,13 @@
 ---
-title: "homepage"
+title: "Home"
 ---
 
-Welcome to my homepage.
+Links to contact me:
+
+-   [E-mail](mailto:oliver.saal@abo.fi)
+-   Twitter
+-   GitHub
+-   ORCID
+-   AboCRIS research portal
+
+Quick description of the website.

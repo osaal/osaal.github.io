@@ -3,16 +3,41 @@ project:
   output-dir: docs
 
 website:
-  title: "homepage"
+  title: "Oliver Saal"
+  
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    background: primary
+    search: true
+    left: 
+      - text: "Me"
+        file: index.qmd
+      - text: "Research"
+        file: research.qmd
+      - text: "Teaching"
+        file: teaching.qmd
+  
+  sidebar:
+    - title: "Me"
+      style: "docked"
+      contents:
+        - text: "Home"
+          file: index.qmd
+        - text: "Curriculum Vitae"
+          file: about.qmd
+    - title: "Research"
+      contents:
+        - text: "Research"
+          file: research.qmd
+        - text: "Master's Thesis"
+          file: mathesis.qmd
+  cookie-consent: 
+    type: express
+    style: simple
+    palette: light
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
     toc: true
 
