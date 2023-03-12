@@ -1,0 +1,7 @@
+---
+title: "Thinking Out Loud"
+listing:
+  contents: posts
+  sort: "date"
+  categories: unnumbered
+---
