@@ -110,5 +110,12 @@
     "title": "Thinking Out Loud",
     "section": "",
     "text": "No matching items"
+  },
+  {
+    "objectID": "posts/samplepost.html",
+    "href": "posts/samplepost.html",
+    "title": "Test Post Do Not Publish",
+    "section": "",
+    "text": "Change draft to false to publish blog post.\nThis is a blog post with text. Lorem ipsum and so on."
   }
 ]

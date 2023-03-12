@@ -1,0 +1,19 @@
+---
+title: "Test Post Do Not Publish"
+description: "Short description of post, shows on blog page"
+author: "Oliver Saal"
+date: today
+date-modified: last-modified
+draft: true
+categories:
+  - test
+  - code
+  - analysis
+  - research
+  - philosophy
+  - etc
+---
+
+Change `draft` to false to publish blog post.
+
+This is a blog post with text. Lorem ipsum and so on.
