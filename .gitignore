@@ -4,3 +4,5 @@
 .Ruserdata
 
 /.quarto/
+posts/samplepost.qmd
+docs/posts/samplepost.html

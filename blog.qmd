@@ -1,8 +1,15 @@
 ---
 title: "Thinking Out Loud"
+citations: posts/references.bib
 listing:
+  id: blog-posts
   type: default
   contents: posts
   sort: "date"
   categories: unnumbered
 ---
+
+Select topics and/or preferred language in **Categories**. I will write in whatever language I feel like at the time, not just English.
+
+::: {#blog-posts}
+:::

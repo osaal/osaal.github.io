@@ -65,20 +65,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-blog-posts .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-blog-posts'] = new List('listing-blog-posts', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -174,7 +174,7 @@ cookieconsent.run({
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="advocacy">advocacy</div><div class="category" data-category="early career researchers">early career researchers</div><div class="category" data-category="english">english</div><div class="category" data-category="science policy">science policy</div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -195,18 +195,60 @@ cookieconsent.run({
 
 </header>
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<p>Select topics and/or preferred language in <strong>Categories</strong>. I will write in whatever language I feel like at the time, not just English.</p>
+<div id="listing-blog-posts" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="advocacy,science policy,early career researchers,english" data-listing-date-sort="1679349600000" data-listing-file-modified-sort="1679412670981" data-listing-reading-time-sort="6.025">
+<div class="body">
+<a href="./posts/fuurtecrmeeting.html">
+<h3 class="no-anchor listing-title">
+Grant Us the Strength - And Maybe Also Healthcare?
+</h3>
+<div class="listing-subtitle">
 
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('advocacy'); return false;">
+advocacy
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('science policy'); return false;">
+science policy
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('early career researchers'); return false;">
+early career researchers
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('english'); return false;">
+english
+</div>
+</div>
+<a href="./posts/fuurtecrmeeting.html">
+<div class="listing-description">
+<p>Thoughts on the early career researcher financing model in Finland.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/fuurtecrmeeting.html">
+<div class="listing-date">
+Mar 21, 2023
+</div>
+<div class="listing-author">
+Oliver Saal
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
