@@ -6,12 +6,15 @@ These pages contain my research, with publication links and other contents as av
 
 Please reference the original sources, not this website.
 
+*Updated 13 April 2023*
+
 ## Current Research Projects
 
 -  *Attitudes on Science and Scientific Quality of Finnish University Professors*. Doctoral thesis in Sociology, Åbo Akademi University. Financing by the Waldemar von Frenckell Foundation and the Kone Foundation.
 -  *Evaluating the Effects of Globalisation on Work: A Phenomenological Model of Abstract Evaluations based on Awareness, Learning, and Knowledge*. Research article with Mika Helander.
--  Research on risk attitudes and perception, and their psychometric network modelling, with Alisa Puustinen and Harri Raisio.
 -  Finnish Emergency Services Attitudes 2023 report with Alisa Puustinen.
+-  Modelling affective risk using psychometric networks, with Alisa Puustinen.
+-  Book chapter on networks in risk perception, with Jan-Erik Anderson and Alisa Puustinen.
 
 ## Research Publications
 
@@ -26,6 +29,8 @@ Saal, Oliver. 2020. *Legitimating Academic Practice: Mapping the Diversity of Ep
 Saal, Oliver. 2018. *Interaction between Online and Offline Worlds. Gender and Ethnicity Processes in the Online Roleplaying Game* World of Warcraft. [Bachelor's Thesis.] Åbo Akademi University, Turku, Finland.
 
 ## Conference Proceedings
+
+*Riskitodennäköisyys ja verkostoanalyysi* [*Risk Probability and Network Analysis*]. With Alisa Puustinen. Sociology Days 2023, working group Sociology of Safety and National Defense. 24 March 2023. *Sosiologia*, upcoming.
 
 *The Phenomenological Structure of Scientific Disciplines*. Draft chapters of doctoral thesis. Finnish Symposium for Science and Technology Studies, 8 July 2022. Unpublished.
 

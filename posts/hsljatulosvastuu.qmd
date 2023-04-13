@@ -4,7 +4,7 @@ description: "HSL käsittää itsensä ensisijaisesti taloudellisesti tuottavana
 author: "Oliver Saal"
 date: "4/13/2023"
 date-modified: last-modified
-draft: true
+draft: false
 citation:
   url: https://osaal.github.io/posts/hsljatulosvastuu.html
   language: fi
