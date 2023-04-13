@@ -1,0 +1,72 @@
+---
+title: "Julkinen liikenne on peruspalvelu, ei sijoituskohde"
+description: "HSL käsittää itsensä ensisijaisesti taloudellisesti tuottavana toimijana. Todellisuudessa he tuottavat julkista peruspalvelua, ei sijoitustoimintaa."
+author: "Oliver Saal"
+date: "4/13/2023"
+date-modified: last-modified
+draft: true
+citation:
+  url: https://osaal.github.io/posts/hsljatulosvastuu.html
+  language: fi
+citation-location: document
+reference-location: margin
+bibliography: references.bib
+categories:
+  - public transportation
+  - city planning
+  - new public management
+  - finnish
+---
+
+Svenska Yle julkaisi tänään, 13. huhtikuuta, [erinomaisen jutun](https://svenska.yle.fi/a/7-10031514), jossa he haastattelivat HSL-alueella aktiivisesti valelipuilla matkustavia henkilöitä. Jutun päähaastateltava kertoo miten hän on liittynyt ryhmään, jossa kaikki ryhmäläiset - neljäkymmentä henkilöä yhteensä - jakavat tarkastusmaksut keskenään jos he jäävät kiinni.
+
+Artikkeli on kokonaisuudessaan erittäin kiinnostava, mutta eräs sitaatti päähaastateltavalta osui silmään:
+
+> Kyseessä ei ole rahan säästäminen, vaan unelmoiminen järjestelmästä jossa matkustajien eivät tarvitse perustaa tällaista ryhmää. Järjestelmä, jossa julkinen liikenne keskittyy matkustajiin eikä siihen, kuinka paljon rahaa HSL tienaa järjestelmällä.^[Svenska Yle, 13.4.2023, kirjoittajan kääntämä. Saatavilla: https://svenska.yle.fi/a/7-10031514. Haettu 13.4.2023.]
+
+Samaan aikaan HSL:n lipuntarkastusyksikön edustaja Satu Koskinen toteaa haastattelussa, että liputta matkustavien "ideologia on ristiriitainen, tuollaisella toiminnalla edistetään hintojen nousua".^[Svenska Yle, 13.4.2023, kirjoittajan kääntämä. Saatavilla: https://svenska.yle.fi/a/7-10031514. Haettu 13.4.2023.]
+
+Mikä minua hieroo tässä keskustelussa, on HSL:n edustama talousajattelu. Lippuhintojen nousu nähdään tässä passiivisena välttämättömyytenä - hinta nousee itsestään eikä kukaan voi asialle mitään. Näinhän ei todellisuudessa ole: hinnat *nostetaan*, eli joku toimija tekee päätöksen nostaa hintoja tietyn logiikan mukaan.
+
+## New Public Managament ja numeroiden ylivalta
+
+HSL edustaa näkemyksellään uuden julkishallinnon ajattelutapaa, englanniksi *new public management* (NPM). Nimestään huolimatta ajattelutapa ei ole hirveän uusi, tietyissä muodoissa NPM on ollut olemassa 1980-luvulta lähtien. Ajattelutavassa keskiössä on asiakas, ei ihminen: julkishallintoa tulisi johtaa yrityksen tapaisesti, johon kuuluu asiakkuuslähtöisyys, tulosvastuut, taloustehokkuus ja niin edelleen.
+
+Otetaan esimerkkinä HSL:n vuosien 2022-2025 strategia: "Asiakkuuksista kestävään kasvuun".^[HSL, ei pvm. "Strategia 2022-2025". Saatavilla: https://www.hsl.fi/hsl/hsl-organisaationa/strategia-2022-2025. Haettu 13.4.2023.] Strategiassa todetaan neljä tavoitetta vuodelle 2025: päästöttömyys, ennätyskäyttömäärät, kustannustehokkuus ja talouden tasapaino. Onkin huomattavaa, ettei yksikään näistä koske käyttökokemusta!
+
+Osallistuin noin kolme viikkoa sitten tieteellisen Sosiologipäivät 2023-konferenssin kvantifioinnin sosiologian työryhmään. Siellä keskusteltiin paljon siitä, millaista valtaa ja mahtia numeroilla on nyky-talouskeskeisessä-yhteiskunnassamme. HSL:n strategia on loistava esimerkki tästä: puhutaan 90 prosenttin päästövähennyksistä, 400 miljoonan käyttäjämääristä, 0,25 euron matkustajakilometrihinnasta - mutta missään ei mainita että matkustajat olisivat tyytyväisiä, että toiminta olisi sosiaalisesti kestävää, että estettäisiin kaupunkieriytymistä.
+
+## Tuottavuuden ideologia toiminnan peruspilarina
+
+HSL on kuntayhtymä, jossa useampi kunta on yhdessä allekirjoittanut sopimuksen julkisliikenteen tuotosta. HSL:n perussopimuksen yhdeksännessä artiklassa todetaankin yhtymän toimintaperiaatteet.^[Helsingin seudun liikenne-kuntayhtymä, 2018. "Perussopimus". Saatavilla: https://hslfi.azureedge.net/globalassets/hsl/paatoksenteko/hsl_perussopimus.pdf. Haettu 13.4.2023.] Niitä on kahdeksan kappaletta, kuta kuinkin:
+
+1.  Asiakaslähtöisyys ja käyttäjien ja kuntien vuorovaikutus.
+2.  Toiminnallisten ja taloudellisten tavoitteiden saavuttaminen.
+3.  Tasapainoinen talous
+4.  Hallituksen vastuulla oleva sisäinen valvonta
+5.  Riskiselvitysten tuottaminen, "etteivät niiden kustannukset aiheuta häiriötä kuntayhtymän toiminnalle *ja rahoitukselle*" (kursiivi lisätty)
+6.  Rahallisesti tuottava rahoitus- ja sijoitustoiminta
+7.  Vieraan pääoman välttäminen
+8.  Mahdollisimman vähäinen pääoman käyttö
+
+Näissä toistuu taas rahallisuus, taloustehokkuus ja talouskontrolli - mutta ei ihmiskeskeisyys. Ainoana ei-rahallisena pisteenä voidaankin nähdä ensimmäinen, "asiakaslähtöisyys", joka kuitenkin peilaa asiakaskeskeisyyttä. HSL:n käyttäjä on asiakas, ei kuntalainen.
+
+Ei siis ole ihme, että HSL suhtautuu nuivasti valelipuilla matkustaviin - niiden päätehtävänähän on olla taloudellisesti kannattava ja kestävä! HSL:n nykyisenä tehtävänä *ei* ole tuottaa sosiaalisesti kestävää julkisliikennettä, vaan *taloudellisesti* kestävää liikennettä.
+
+(Sivunoteerauksena: Minua kismii sana "joukkoliikenne". Minne jää julkisen sektorin vastuu?)
+
+## Julkinen liikenne on peruspalvelu
+
+Julkisliikenteen tehtävä ei, omasta mielestäni, ole tienata rahaa. Pääsääntöisesti (ja tietysti monien eri asteriskien ja poikkeuksien kanssa) julkisen sektorin tulee tuottaa ne palvelut, jotka ovat taloudellisesti kannattamattomia mutta elintärkeitä yhteiskunnan toiminnan ja yhdenvertaisuuden kannalta. Julkinen liikenne on tällainen.
+
+Miksi sitten julkista liikennettä kohdellaan taloudellisesti tasapainoitettavana sijoituskohteena? Vastaus löytynee NPM-ideologiasta. Suosittu argumentti julkisen sektorin pienentämiselle on sen tehottomuus - yksityiset markkinat nyt vain tuottavat tehokkaammin, koska siellä kilpaillaan kunnolla. Tällä logiikalla on varmasti katsottu, että julkisesti tuotettu joukkoliikenne on tehotonta toimintaa, jossa pyöritellään peukaloita ja ajetaan ani harva linja-autovuoro.
+
+Julkisen liikenteen tehtävä ei kuitenkaan ole tienata rahaa, vaan mahdollistaa kansalaisten vapaan liikkuvuuden ja vapaan asutuksen oikeuksien todellisen toteutumisen. Julkinen liikenne varmistaa, että vähävaraiset henkilöt pääsevät töihin, vapaa-ajan viettoon, kulttuurin pariin - että he pääsevät liikkumaan kaikkialla kaupungissa. Jos julkisin varoin tuotetaan kaupunkeja, rakennettua ympäristöä, kulttuuria ja koulutusta, miksi niiden etuoville pääsy olisi kiinni yksityisestä rahasta?
+
+## Tuottavuus pois yhtälöstä
+
+Ehdottaisin siksi, että HSL:n toimintaperiaatteisiin tulisi tehdä radikaaleja muutoksia. HSL:lle - niin kuin kaikille muille julkisliikenteen tuottajille - tulisi suoda mahdollisuus, jopa odotus, olla taloudellisesti *tappiollisia*. Julkinen liikenne ei ole sijoitustoimintaa, vaan elintärkeää yhteiskunnan perustoimintaa. Emme edellytä tieverkon olevan taloudellisesti kannattavaa toimintaa - miksi edellytämme sitä julkiselta liikenteelltä?
+
+Toiseksi, julkisliikenteen rahoituskannan tulisi muuttua radikaalisti. Se on julkisesti tuotettua peruspalvelua, mitä ei tule rahoittaa yksityisellä rahalla. Lipuntulot tulisi pyrkiä nollaan, ei tasapainoon julkisen rahoituksen kanssa. HSL:n tavoitteena tulisi olla lipputulojen vähentäminen nollaan prosenttiin - ei kasvattaminen 400 miljoonaan euroon, niin kuin nykyinen strategia ehdottaisi. Tämä tarkoittaa suurempaa sitoutumista kuntayhtymän jäseniltä, ja näin pitääkin olla: julkinen liikenne on peruspalvelu, ei luksus- tai sijoitustuote.
+
+HSL:n "Liputtomasti selityksiä"-kampanjan aikana moni Svenska Ylen lukija reagoi syyteeseen, että liputta matkustavat olisivat syypää HSL:n lippujen hintojen korotukseen.^[Svenska Yle, 17.2.2023. Saatavilla: https://svenska.yle.fi/a/7-10028654. Haettu 13.4.2023.] Eräs haastateltava toteaa kuitenkin, että hänelle valinta on päivän aterioinnin ja julkisen liikenteen lipun välillä. Tämä ei ole sosiaalisesti kestävää toimintaa HSL:n kannalta. Lainatakseni HSL:n edustajan kommentteja: Jos HSL jatkaa taloudellista linjaansa, heidän ideologiansa on ristiriidassa omien tavoitteidensa kanssa. HSL aiheuttaa itselleen lippuvilppiä ja matkustajakatoa, mikä itsessään pahentaa taloudellista tilannetta - niin kuin moni rahaideologisessa ajattelutavassa, noidankehä on melkein taattu.
