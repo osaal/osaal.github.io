@@ -6,19 +6,18 @@ These pages contain my research, with publication links and other contents as av
 
 Please reference the original sources, not this website.
 
-*Updated 13 April 2023*
+*Updated 22 May 2023*
 
 ## Current Research Projects
 
 -  *Attitudes on Science and Scientific Quality of Finnish University Professors*. Doctoral thesis in Sociology, Åbo Akademi University. Financing by the Waldemar von Frenckell Foundation and the Kone Foundation.
--  *Evaluating the Effects of Globalisation on Work: A Phenomenological Model of Abstract Evaluations based on Awareness, Learning, and Knowledge*. Research article with Mika Helander.
--  Finnish Emergency Services Attitudes 2023 report with Alisa Puustinen.
--  Modelling affective risk using psychometric networks, with Alisa Puustinen.
--  Book chapter on networks in risk perception, with Jan-Erik Anderson and Alisa Puustinen.
+-  Affective risk and psychological networks, with Alisa Puustinen & Jan-Erik Johanson.
 
 ## Research Publications
 
 ### Reports
+
+Saal, Oliver & Alisa Puustinen. 2023. *Suomalaisten pelastusasenteet 2023*. [*Finnish Emergency Services Attutides 2023*. Research report.] Helsinki: Ministry of the Interior. Link: *Coming soon...*
 
 Saal, Oliver, Aino Harinen & Alisa Puustinen. 2021. *Suomalaisten pelastusasenteet 2020*. [*Finnish Emergency Services Attitudes 2020*. Research report.] Kuopio: Finnish Emergency Services Academy. Link: <http://info.smedu.fi/kirjasto/Sarja_B/B2_2021.pdf>.
 
@@ -27,6 +26,14 @@ Saal, Oliver, Aino Harinen & Alisa Puustinen. 2021. *Suomalaisten pelastusasente
 Saal, Oliver. 2020. *Legitimating Academic Practice: Mapping the Diversity of Epistemic Logics in Finnish University Disciplines*. [Master's Thesis.] Åbo Akademi University, Turku, Finland. Link: <https://www.doria.fi/handle/10024/176872>.
 
 Saal, Oliver. 2018. *Interaction between Online and Offline Worlds. Gender and Ethnicity Processes in the Online Roleplaying Game* World of Warcraft. [Bachelor's Thesis.] Åbo Akademi University, Turku, Finland.
+
+### Unpublished Manuscripts
+
+Johanson, Jan-Erik; Alisa Puustinen & Oliver Saal. n.d. *Affective Risk Perception Networks*. [Chapter in edited monograph.]
+
+Saal, Oliver & Alisa Puustinen. n.d. *Measuring Subjective Risk Perception as a Latent Construct: A Semi-Confirmatory Factor Analytic Approach*. [Article manuscript.]
+
+Helander, Mika & Oliver Saal. n.d. *Evaluating the Effects of Globalisation on Work: A Phenomenological Model of Abstract Evaluations Based on Awareness, Learning, and Knowledge*. Submitted for peer review, *Global Labour Journal*.
 
 ## Conference Proceedings
 
@@ -44,3 +51,9 @@ Saal, Oliver. 2018. *Interaction between Online and Offline Worlds. Gender and E
 
 -  **Kone Foundation** | Personal working grant for doctoral thesis in Sociology. 3.5 years (full-time). Awarded in 2021.
 -  **Waldemar von Frenckell Foundation** | Personal working grant for doctoral thesis in Sociology. 5 months (full-time). Awarded in 2021.
+
+## Non-Fiction Writing
+
+### Articles
+
+Saal, Oliver. 2023. *Suomalaiset ovat tyytyväisiä pelastustoimintaan - mutta osaavatko he itse toimia vaaratilanteissa?* [*Finns are satisfied with emergency services - but do they know how to act in risky situations?*]. *Palopäällystö*, upcoming.
