@@ -17,7 +17,7 @@ about:
       href: https://orcid.org/0000-0002-4870-0458
 ---
 ::: {#first-section}
-Oliver Saal is a sociologist specialising in Science and Technology Studies, and the phenomenology of scientific disciplines. His academic interests also include quantitative analysis, especially network and latent factor models, and Higher Education studies. His free time is spent watching RuPaul's Drag Race and producing documentary films.
+Oliver Saal is a sociologist specialising in Science and Technology Studies, and the phenomenology of scientific disciplines. My academic interests include quantitative analysis, especially network and latent factor models, Higher Education studies, and the sociology of risk perception. My free time is spent watching RuPaul's Drag Race, producing documentary films, and hobby programming.
 
 ## Education
 
@@ -33,15 +33,15 @@ B.Soc.Sc. in Sociology | 2015 - 2018
 :::
 
 ## Experience
-**Researcher** | [Finnish National Emergency Academy](https://pelastusopisto.fi/en/) <br/>
-Kuopio, Finland <br/>
-Full-time, civil servant <br/>
-2022 - current
-
 **Doctoral Researcher** | Åbo Akademi University <br/>
 Turku, Finland <br/>
 Full-time, grant-funded <br/>
 2020 - current
+
+**Researcher** | [Finnish National Emergency Academy](https://pelastusopisto.fi/en/) <br/>
+Kuopio, Finland <br/>
+Full-time, civil servant <br/>
+2022 - 2023
 
 **Research Assistant**,
 [The Westermarck Society ry](https://www.facebook.com/westermarckseura/), Turku, Finland (2021) <br/>

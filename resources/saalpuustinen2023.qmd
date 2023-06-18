@@ -1,0 +1,43 @@
+---
+title: "Measuring Subjective Risk Perception as a Latent Construct"
+subtitle: "A Semi-Confirmatory Factor Analytic Approach"
+author:
+  - name: Oliver Saal
+  - name: Alisa Puustinen
+date: "6/18/2023"
+abstract:
+  In our paper we analyse risk perceptions of individuals based on data collected as part
+  of the longitudinal survey series Finnish Emergency Attitudes. We propose that in
+  terms of risk perception, risks should be seen as interconnected, intuitively valued, and
+  socially mediated. Using factor analysis, we construct a General Risk Probability
+  Perception Scale (GRPPS) and analyse the variance in risk perception in three
+  different models. We found support for the hypothesis that risk perception is a unitary
+  construct, as opposed to composed of singular risk related perceptions of probability.
+  General risk perception seems to be related to experiences of actual risk, whether
+  direct, near-miss or professional. For social variables, only being male or elderly
+  predicts a higher general perception of risk.
+keyword:
+  - risk perception
+  - semi-confirmatory factor analysis
+  - General Risk Probability Perception Scale
+  - direct experience
+  - near misses
+title-block-banner: true
+draft: true
+categories:
+  - risk perception
+  - semi-confirmatory factor analysis
+  - General Risk Probability Perception Scale
+  - direct experience
+  - near misses
+citation:
+  url: https://osaal.github.io/articles/saalpuustinen2023.html
+  type: manuscript
+  genre: "Unpublished Manuscript"
+---
+
+```{=html}
+<iframe width="780" height="1000" src="/resources/pdfs/saalpuustinen2023_submitted_prereview_20230618.pdf"></iframe>
+```
+
+**This manuscript is not published in a pre-print archive.**

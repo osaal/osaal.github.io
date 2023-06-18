@@ -18,6 +18,8 @@ website:
         file: research.qmd
       - text: "Teaching"
         file: teaching.qmd
+      - text: "Resources"
+        file: resources.qmd
       - text: "Thinking Out Loud"
         file: blog.qmd
     right:
