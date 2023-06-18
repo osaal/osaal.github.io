@@ -23,7 +23,7 @@ keyword:
   - direct experience
   - near misses
 title-block-banner: true
-draft: true
+draft: false
 categories:
   - risk perception
   - semi-confirmatory factor analysis
@@ -37,7 +37,7 @@ citation:
 ---
 
 ```{=html}
-<iframe width="780" height="1000" src="/resources/pdfs/saalpuustinen2023_submitted_prereview_20230618.pdf"></iframe>
+<iframe width="780" height="1000" src="saalpuustinen2023_submitted_prereview_20230618.pdf"></iframe>
 ```
 
 **This manuscript is not published in a pre-print archive.**
