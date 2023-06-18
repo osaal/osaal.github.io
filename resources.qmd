@@ -13,7 +13,7 @@ listing:
     categories: unnumbered
 ---
 
-Below are resources I have created, e.g., unpublished manuscripts, teaching slides, etc. Licensing information is available on each resource's page.
+Below are resources I have created, e.g., unpublished manuscripts, conference presentations, etc. Licensing information is available on each resource's page.
 
 The bottom of each resource's page contains reference information, please follow it when referencing.
 
@@ -21,6 +21,6 @@ The bottom of each resource's page contains reference information, please follow
 ::: {#manuscripts}
 :::
 
-## Teaching Slides
+## Presentations
 ::: {#slides}
 ::: 
