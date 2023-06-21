@@ -1,13 +1,14 @@
 ---
-  title: "Among the Firefighters"
-description: "I spent the past half a year doing safety and security studies research. This blog is about that experience."
+title: "Among the Firefighters"
+description: |
+  I spent the past half a year doing safety and security studies research.
+  This blog is about that experience.
 author: "Oliver Saal"
 date: "6/21/2023"
 date-modified: last-modified
 draft: false
 citation:
   url: https://osaal.github.io/posts/safetyandsecuritystudies.html
-language: fi
 citation-location: document
 reference-location: margin
 bibliography: references.bib

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Oliver Saal">
+<meta name="dcterms.date" content="2023-06-21">
+<meta name="description" content="I spent the past half a year doing safety and security studies research. This blog is about that experience.">
+
+<title>Oliver Saal - Among the Firefighters</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  });
+});
+</script> 
+  
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Oliver Saal</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Me</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../teaching.html" rel="" target="">
+ <span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources.html" rel="" target="">
+ <span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html" rel="" target="">
+ <span class="menu-text">Thinking Out Loud</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/ollisaal" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/osaal" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:oliver.saal@abo.fi" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#pelastusopwhat" id="toc-pelastusopwhat" class="nav-link active" data-scroll-target="#pelastusopwhat">Pelastusop–what?</a></li>
+  <li><a href="#interdisciplinarity-in-action" id="toc-interdisciplinarity-in-action" class="nav-link" data-scroll-target="#interdisciplinarity-in-action">Interdisciplinarity in Action</a></li>
+  <li><a href="#a-meager-but-very-happy-conclusion" id="toc-a-meager-but-very-happy-conclusion" class="nav-link" data-scroll-target="#a-meager-but-very-happy-conclusion">A Meager, but Very Happy, Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Among the Firefighters</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">research</div>
+    <div class="quarto-category">safety studies</div>
+    <div class="quarto-category">security studies</div>
+    <div class="quarto-category">Pelastusopisto Emergency Services Academy Finland</div>
+    <div class="quarto-category">english</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>I spent the past half a year doing safety and security studies research. This blog is about that experience.</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Oliver Saal </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 21, 2023</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">June 21, 2023</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p>Tired and wrung dry, I walked out of the concrete-and-glass main building of the Emergency Services Academy, Pelastusopisto, today. After a hectic month of our annual conference, two days of sessions on risk management, new technologies in forest firefighting, emergency services communications, and many more topics, my current work contract is coming to an end. Luckily, and very surprisingly, I was offered continuation for another half a year. This blog is about the experience of working here, of working in safety and security research, and of working as a public sector researcher.</p>
+<section id="pelastusopwhat" class="level1 page-columns page-full">
+<h1>Pelastusop–what?</h1>
+<div class="page-columns page-full"><p>“<a href="https://www.pelastusopisto.fi">Pelastusopisto - Emergency Services Academy Finland</a>”<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> organises the national emergency services education in Finland, from ‘run-of-the-mill’ firefighters to civil protection specialists, emergency responders, and emergency services leadership personnel. It is financed and governed by the Ministry of the Interior, and functions as a specialist school following its own educational regulation, separate from regular second and third cycle educational institutions. Crucial to my own interests, however, it also coordinates, organises, and supports national research into emergency services - something I will collectively call ‘safety and security research.’</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Yes, that’s the full name. I’ll use a shortened name henceforth.</p></li></div></div>
+<div class="page-columns page-full"><p>Originally, I found myself in the inland lake city of Kuopio<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> at the Emergency Services Academy in late 2020, as I graduated amidst the COVID19 pandemic and was looking for odd jobs while searching for PhD research funding. I received a position as a research assistant and was tasked primarily with completing the Finnish Attitudes of Emergency Services 2020 report, a triannual survey study on Finnish attitudes towards the emergency services, risk preparedness and personal preparation behaviour, emergency communications preferences, among other topics. The job was short, and I finished the four-month stint visiting the campus only once, even mailing my computer and keys back to Kuopio.</p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;As a native to the southern Finnish shorelines and archipelagos, I find myself surprisingly at home in this in-land city of 120 000 inhabitants, thanks to its vast lakes and island belts. Though, they speak a funny accent here.</p></li></div></div>
+<div class="page-columns page-full"><p>However, I was quite taken aback to be asked to return some two-and-a-half years later, this time as a researcher, to once again complete the Attitudes report for 2023. The job title was fancier, the salary higher, and the contract longer, and the offer came at a time where I was stuck in a rut with my PhD thesis. The change was welcome, in other words. I took up a part-time position for the tail-end of 2022, finishing up my course in Science and Technology Studies and other odd ends of my thesis at Åbo Akademi University before returning once more to the concrete, rather monolithic and imposing main building<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> in southern Kuopio.</p><div class="no-row-height column-margin column-container"><li id="fn3"><p><sup>3</sup>&nbsp;Seriously, the architecture is impressive. Apparently constructed in 1992 as a <a href="http://arksavo.fi/kohteet/pelastusopisto/">winning design</a> in an architectural competition, the campus is composed on multiple concrete buildings, all in various angles to another, with intersecting buildings. My first thought was “Jesus H. Christ, that is <em>awful!“,</em> but it has definitely grown on me over the past half year.</p></li></div></div>
+</section>
+<section id="interdisciplinarity-in-action" class="level1 page-columns page-full">
+<h1>Interdisciplinarity in Action</h1>
+<div class="page-columns page-full"><p>The research conducted at Pelastusopisto is very varied. I came on-board as a social scientist, working with my colleague senior researcher and docent <a href="https://mpkk.academia.edu/AlisaPuustinen">Alisa Puustinen</a> to conduct a nationally representative attitude and knowledge survey study. However, one of my most striking memories must have been one of our monthly on-location days, where our colleague <a href="https://scholar.google.fi/citations?user=5ymRewEAAAAJ&amp;hl=fi">Marjaleena Aatamila</a> presented her research on carcinogen exposure during cooktop burning of a selection of household materials, conducted in co-operation with Aalto University<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. As she was presenting parts-per-million measurements of various aldehydes and the rate of change over time as the testing space was aired out, I thought to myself, “I am far away from my sociological home!”</p><div class="no-row-height column-margin column-container"><li id="fn4"><p><sup>4</sup>&nbsp;<a href="https://www.pelastusopisto.fi/tutkimus-ja-kehitys/hankkeet/liesipalojen-syttyminen-vaikutukset-ja-ehkaisy/">Information in Finnish</a>, as well as a <a href="https://blogs.aalto.fi/fire/liesipalo/">blog in English</a> by Aalto University, on the project.</p></li></div></div>
+<p>My first point is, indeed, the utter joy of working in such an interdisciplinary group. Apart from me as a sociologist, our researchers are everything from administrative scientists and communications researchers to biologists, pharmacists, physicists, and statisticians. Despite these, we work across borders, co-operating and helping each others in projects we might never have a chance to otherwise conduct. The traditional boundaries between soft and hard, qualitative and quantitative, exact and approximate were constantly blurred, and all our research was better from this diversity of perspectives.</p>
+<p>Another signal of this interdisciplinarity was how many of us <em>never actually studied anything remotely related to emergency services!</em> Many of us were educated in completely different fielda, finding our way to security and safety research by happenstance. In fact, there is no real educational pathway to becoming a safety and security scientist in Finland - apart from, perhaps, a doctorate in military sciences at the National University of Defense, which none of us had or even particularly aspired to have.</p>
+<p>Yet, there is an odd camaraderie in the air among security researchers. We discussed this over the conference dinner among colleagues, and came to the conclusion that the common goal and clearly shared values is a major factor in this. As a sociologist, it has been hammered into me over years of brainwa- education, that most topics have multiple perspectives and often divergent values attached to them. Yet, in embodied practice, as I stand discussing the need for context-sensitive education on home preparedness with a conference attendee, the point of divergent values is hard to argue.</p>
+<div class="page-columns page-full"><p>Emergency services, and safety research in general, strives to save lives, protect citizens, and create safety. If sociological research can sometimes feel like meaningless word salad<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>, this particular field is hard to view that way. Sure, the odd militarist who speaks of weaponized national defense as part of security-making might be off-putting to those of a more pacifist stint, but it is easy to re-discover one’s calm among colleagues discussing the criticalities of securitization discourses and the need for soft values and human understanding in authority practice.</p><div class="no-row-height column-margin column-container"><li id="fn5"><p><sup>5</sup>&nbsp;I should know, I study social phenomenology.</p></li></div></div>
+<div class="page-columns page-full"><p>However, this camaraderie can unfortunately be short-lived. When working in an interdisciplinary field whose institutional status is precarious<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> and vague, I noticed the distinct lack of inter-departmental communication and network-building. While the Emergency Services Academy is designated as the national coordinator of emergency services research, there is no real connection between all the institutions, both academic and professional, conducting safety and security research in Finland. Many want change to this, but given that most of us work in the public sector, the hinders of a results-driven and highly economized administration may often prove unsurmountable. We lack a common journal, which just adds to the diffusion of research personnel and resources around the country. I would also like to bring up those conducting safety and security research at miscellaneous departments and units across the country, but whose work we rarely see, as the Government Peoples never stray too far into the Murky Shadows of Non-Government Peoples.</p><div class="no-row-height column-margin column-container"><li id="fn6"><p><sup>6</sup>&nbsp;We are, I concede, financed directly by a ministry. I speak more of the institutional position that emergency services research currently holds, especially in the aftermath of a major social and health care reform.</p></li></div></div>
+<p>Perhaps this will change soon, however. The newly-unveiled topic for next years conference is (freely translated) ‘Effecting Change Together,’ combining questions of research impact with togetherness and networking. One of the strategic aims of Pelastusopisto is to construct a national network of emergency services researchers. Perhaps that ambition is too small: there are enough of us to construct a network of safety and security researchers from all fields, covering topics such as youth marginalisation, health care safety, firefighting and emergency response, armed conflict resolution, international law, the list goes on.</p>
+<p>This brings me to the topic more generally. I still am somewhat unclear on what ‘safety and security research’ even means. At its core, however, it seems to be about the understanding of factors related to safety, from the micro to the macro, and how we can effect change which measurably increases safety - whether it be among the population at large, among firefighters in their professional lives, among civilians caught in armed conflicts, among refugees and immigrants. This opens up for uncountable interesting research streams, even (and especially) in the field of social and human sciences. How do people construct a sense of safety? Which actions can a government take to increase safety, both perceived and real? What dangers lie in focussing on perception over actual safety, and what does it even mean to perceive something as ‘safe’ or ‘dangerous?’</p>
+</section>
+<section id="a-meager-but-very-happy-conclusion" class="level1 page-columns page-full">
+<h1>A Meager, but Very Happy, Conclusion</h1>
+<div class="page-columns page-full"><p>All of this is more or less an ode to joy. I found this community of stray researchers, many in-between academic homes, looking for an institution to house them. In them, I found camaraderie and true interdisciplinarity, in a way I have only seen described in lengthy papers before. It is this community which is so utterly important for the continued well-being of young researchers: the possibility to walk into an office<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> and be inspired by the creativity, the variety, and the tenacity of researchers from all across the scientific spectrum.</p><div class="no-row-height column-margin column-container"><li id="fn7"><p><sup>7</sup>&nbsp;Not a given for Finnish doctoral researchers, unfortunately!</p></li></div></div>
+<p>My time at Pelastusopisto has been incredibly rewarding - and as luck would have it, I am given a chance to continue that time. In a sense, I hope I can inspire other doctoral students to look out for these places: the one’s that inspire, the one’s that support and the one’s that push you forward. Academic work can be grueling and thankless - not to talk about the abysmal salaries - so treat yourself, and find a community that supports you.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{saal2023,
+  author = {Saal, Oliver},
+  title = {Among the {Firefighters}},
+  date = {2023-06-21},
+  url = {https://osaal.github.io/posts/safetyandsecuritystudies.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-saal2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+Saal, Oliver. 2023. <span>“Among the Firefighters.”</span> June 21,
+2023. <a href="https://osaal.github.io/posts/safetyandsecuritystudies.html">https://osaal.github.io/posts/safetyandsecuritystudies.html</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
