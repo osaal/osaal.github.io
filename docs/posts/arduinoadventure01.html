@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Oliver Saal">
+<meta name="dcterms.date" content="2023-06-28">
+<meta name="description" content="This spring, my partner and I received an allotment garden. Being techy, lazy, and complete integrated tech beginners, we decided to make our own wireless moisture sensor to know when we have to water. This is a blog about that journey!">
+
+<title>Oliver Saal - Building a Wireless Moisture Sensor with Arduino - Part I</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  });
+});
+</script> 
+  
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Oliver Saal</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Me</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../teaching.html" rel="" target="">
+ <span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources.html" rel="" target="">
+ <span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html" rel="" target="">
+ <span class="menu-text">Thinking Out Loud</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/ollisaal" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/osaal" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:oliver.saal@abo.fi" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#arduino" id="toc-arduino" class="nav-link" data-scroll-target="#arduino">Arduino?</a></li>
+  <li><a href="#whats-the-purpose-then" id="toc-whats-the-purpose-then" class="nav-link" data-scroll-target="#whats-the-purpose-then">What’s the purpose, then?</a></li>
+  <li><a href="#reading-the-external-world" id="toc-reading-the-external-world" class="nav-link" data-scroll-target="#reading-the-external-world">Reading the External World</a></li>
+  <li><a href="#reading-from-the-moisture-sensor" id="toc-reading-from-the-moisture-sensor" class="nav-link" data-scroll-target="#reading-from-the-moisture-sensor">Reading from the Moisture Sensor</a></li>
+  <li><a href="#what-now" id="toc-what-now" class="nav-link" data-scroll-target="#what-now">What Now?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Building a Wireless Moisture Sensor with Arduino - Part I</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">hobby</div>
+    <div class="quarto-category">integrated computing</div>
+    <div class="quarto-category">Arduino</div>
+    <div class="quarto-category">wireless transmission</div>
+    <div class="quarto-category">moisture sensor</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>This spring, my partner and I received an allotment garden. Being techy, lazy, and complete integrated tech beginners, we decided to make our own wireless moisture sensor to know when we have to water. This is a blog about that journey!</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Oliver Saal </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 28, 2023</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">June 28, 2023</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>My partner and I recently got rights to rent an allotment garden nearby in the city. It is approximately 100 square metres, and took a <em>lot</em> of effort to turn and perma-culture to make it usable. The soil is mostly clay, which doesn’t hold too well water.</p>
+<p>Being a bit of a techy myself, a thought occurred to me: “We have an Arduino board that we never use. What if we’d make some sort of sensor to let us know when to water?”. Very lazy, I admit, but an intriguing project.</p>
+<p>I have some programming background, mainly in R and Android Java development, so I thought it might be an easy enough project. A few weeks in now, and we’re seeing some progression, so I reckon I could write a few blog posts about it. This is the first post.</p>
+</section>
+<section id="arduino" class="level1">
+<h1>Arduino?</h1>
+<p>The Arduino microprocessor is a tiny and cheap integrated programming development board. It has everything you need to get started with some very rudimentary microprocessing development - but the magical part about it is that it scales to almost anything.</p>
+<p>Really, the only reason we chose the Arduino was that we have one at home. My partner had bought a starter kit some years back, which he fiddled with for a few weeks and left in a box to rot (rust?). So I thought we could use that!</p>
+<p>Basically, the Arduino (ours is an Uno Rev3) is a small computer with a lot of input and output pins. You interact with the computer by writing code in flavoured C++, which is compiled and transferred over to the Arduino’s internal memory. Once the device has power - through USB, a battery, or even solar panels - it runs the program.</p>
+<p>On its own, it’s not very impressive. However, the Arduino admits almost any type of sensors, attachments, and devices to plug in. To interact with the world, you have gyroscopes, accelerometers, sensors for moisture, temperature, barometers, you name it.</p>
+</section>
+<section id="whats-the-purpose-then" class="level1">
+<h1>What’s the purpose, then?</h1>
+<p>We decided to start with one “simple” functionality: <em>Measure the soil moisture at the allotment and transfer it wirelessly to us.</em> This seems somewhat simple, but - as it turns out - every step has to be manually configured and constructed. Also, I need to learn C++, no biggie.</p>
+<p>To break the steps down, we figured we need to do something like:</p>
+<ol type="1">
+<li>Measure the soil moisture using a sensor.</li>
+<li>Bring that data into the Arduino.</li>
+<li>Do things to the data.</li>
+<li>Store the data.</li>
+</ol>
+<p>So let’s get into what we have accomplished so far - which is mostly step one and two!</p>
+</section>
+<section id="reading-the-external-world" class="level1">
+<h1>Reading the External World</h1>
+<p>Despite what philosophers of science might argue, measuring the external world is actually very simple. For the Arduino, we opted to use the Grove ecosystem of sensors, since it seemed well-documented and easy-to-use.</p>
+<p>Our first purchases were the Grove connector shield and a pile of moisture sensors. The <a href="https://wiki.seeedstudio.com/Base_Shield_V2/">connector shield</a> simply “translates” the special four-pin connector on most Grove sensors into the pins that the Arduino reads. The word “shield” means that it sits neatly on top of the Arduino, so that you don’t have to do any wiring. Neat!</p>
+<p>The <a href="https://wiki.seeedstudio.com/Grove-Moisture_Sensor/">moisture sensors</a> are small two-pronged forks with a four-pin cable attaching to the back of the sensor. The sensor runs a current through the prongs, measures the voltage and returns it through the chosen pin. Using the connector shield, we can hook the whole thing up to the analog pins (since it is only a simple analog current that is being read), in our current case, analog pin 0.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\images/aa01_testingsetup.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">My current testing setup. The boards in the stack from top down: Grove connector shield, data logging shield, Arduino board. Analog pin 0 is connected through the Grove shield to the moisture sensor, which is sitting in a small potted plant.</figcaption>
+</figure>
+</div>
+<p>This, essentially, takes care of step one! Of course, on its own, this does nothing - the Arduino must be told what to do with the data that comes in.</p>
+</section>
+<section id="reading-from-the-moisture-sensor" class="level1">
+<h1>Reading from the Moisture Sensor</h1>
+<p>As mentioned, the Arduino is programmed in a language called C++ (with some extra Arduino flavour, I’ve understood). This language is pretty human-readable, though admittedly much more complex than my current working language, R. In a first, very preliminary testing setup, I managed to omit three or four semi-colons, breaking the code instantly…</p>
+<p>Thus far, I’ve written a Sketch (the Arduino name for code scripts that are executed on the board) that takes an average of readings with a specific interval and over a defined number of readings, and prints it to the serial console (more on that later). This is the full script, in all its messy gloriness:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {{cpp}} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>// Setup Grove moisture pin</span>
+<span id="cb1-2"><a href="#cb1-2"></a>int sensorPin = A0;</span>
+<span id="cb1-3"><a href="#cb1-3"></a>int sensorValue = 0;</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>// Setup average reading</span>
+<span id="cb1-6"><a href="#cb1-6"></a>const int numReadings = 15;   // Number of readings done before reporting</span>
+<span id="cb1-7"><a href="#cb1-7"></a>const int delayTime = 1000;   // Time between readings in ms</span>
+<span id="cb1-8"><a href="#cb1-8"></a>int readings[numReadings];    // Array for storing readings, size of numReadings</span>
+<span id="cb1-9"><a href="#cb1-9"></a>int readIndex = 0;            // Index for storing readings and iteration</span>
+<span id="cb1-10"><a href="#cb1-10"></a>int total = 0;                // Storing total value for calculation</span>
+<span id="cb1-11"><a href="#cb1-11"></a>int average = 0;              // Storing average value for reporting</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>void setup() {</span>
+<span id="cb1-14"><a href="#cb1-14"></a>  // put your setup code here, to run once:</span>
+<span id="cb1-15"><a href="#cb1-15"></a>  Serial.begin(9600);</span>
+<span id="cb1-16"><a href="#cb1-16"></a>  // Intialize the reading array</span>
+<span id="cb1-17"><a href="#cb1-17"></a>  for (int thisReading = 0; thisReading &lt; numReadings; thisReading++) {</span>
+<span id="cb1-18"><a href="#cb1-18"></a>    readings[thisReading] = 0;</span>
+<span id="cb1-19"><a href="#cb1-19"></a>  }</span>
+<span id="cb1-20"><a href="#cb1-20"></a>}</span>
+<span id="cb1-21"><a href="#cb1-21"></a></span>
+<span id="cb1-22"><a href="#cb1-22"></a>void loop() {</span>
+<span id="cb1-23"><a href="#cb1-23"></a>  total = 0;</span>
+<span id="cb1-24"><a href="#cb1-24"></a>  // Iterate over numReadings and write reading to array, average out and print to serial.</span>
+<span id="cb1-25"><a href="#cb1-25"></a>  for (readIndex; readIndex &lt;= numReadings; readIndex++) {</span>
+<span id="cb1-26"><a href="#cb1-26"></a>    // Print final value and reset loop.</span>
+<span id="cb1-27"><a href="#cb1-27"></a>    if (readIndex == numReadings) {</span>
+<span id="cb1-28"><a href="#cb1-28"></a>        // Calculate value</span>
+<span id="cb1-29"><a href="#cb1-29"></a>        average = total / numReadings;</span>
+<span id="cb1-30"><a href="#cb1-30"></a>        Serial.print("Moisture average = ");</span>
+<span id="cb1-31"><a href="#cb1-31"></a>        Serial.println(average);</span>
+<span id="cb1-32"><a href="#cb1-32"></a>        // Reset the reading array</span>
+<span id="cb1-33"><a href="#cb1-33"></a>        for (int thisReading = 0; thisReading &lt; numReadings; thisReading++) {</span>
+<span id="cb1-34"><a href="#cb1-34"></a>          readings[thisReading] = 0;</span>
+<span id="cb1-35"><a href="#cb1-35"></a>        }</span>
+<span id="cb1-36"><a href="#cb1-36"></a>      // Reset the index and start over</span>
+<span id="cb1-37"><a href="#cb1-37"></a>      readIndex = 0;</span>
+<span id="cb1-38"><a href="#cb1-38"></a>      break;</span>
+<span id="cb1-39"><a href="#cb1-39"></a>    } else {</span>
+<span id="cb1-40"><a href="#cb1-40"></a>      // If not </span>
+<span id="cb1-41"><a href="#cb1-41"></a>      readings[readIndex] = analogRead(sensorPin);</span>
+<span id="cb1-42"><a href="#cb1-42"></a>      total += readings[readIndex];</span>
+<span id="cb1-43"><a href="#cb1-43"></a>    }</span>
+<span id="cb1-44"><a href="#cb1-44"></a>  delay(delayTime);</span>
+<span id="cb1-45"><a href="#cb1-45"></a>  }</span>
+<span id="cb1-46"><a href="#cb1-46"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Arduino code is written in three main areas, from top to bottom:</p>
+<ol type="1">
+<li>Libraries and variable declaration.</li>
+<li>The setup() function.</li>
+<li>The loop() function.</li>
+</ol>
+<p>Area one defines which libraries are being used (if any), as well as declares all variables into memory. This is something that is not done in R, but I remember it faintly from my Java adventures some years back. Essentially, I tell the computer “Hey! I want to use a number called <em>number</em> later on, please reserve space for it in the memory!” which the computer then does. This is that area in the above script:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource {{cpp}} number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>// Setup Grove moisture pin</span>
+<span id="cb2-2"><a href="#cb2-2"></a>int sensorPin = A0;</span>
+<span id="cb2-3"><a href="#cb2-3"></a>int sensorValue = 0;</span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a>// Setup average reading</span>
+<span id="cb2-6"><a href="#cb2-6"></a>const int numReadings = 15;   // Number of readings done before reporting</span>
+<span id="cb2-7"><a href="#cb2-7"></a>const int delayTime = 1000;   // Time between readings in ms</span>
+<span id="cb2-8"><a href="#cb2-8"></a>int readings[numReadings];    // Array for storing readings, size of numReadings</span>
+<span id="cb2-9"><a href="#cb2-9"></a>int readIndex = 0;            // Index for storing readings and iteration</span>
+<span id="cb2-10"><a href="#cb2-10"></a>int total = 0;                // Storing total value for calculation</span>
+<span id="cb2-11"><a href="#cb2-11"></a>int average = 0;              // Storing average value for reporting</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here, I define which sensor pin will be read and create a variable for its value. I also seet up a number of variables to help me work the data, the most important ones being <code>numReadings</code> and <code>readings[numReadings]</code>. The former defines how many readings will be done (fifteen in this example), and the latter is an array storing the data read from each reading. The array is defined as an integer (number) array of size <code>numReadings</code>, so that it can fit all the necessary sensor readings. Another important variable is <code>delayTime</code>, which defines, in milliseconds, how long to wait between each reading.</p>
+<p>Combining these three currently, the script is set up to take a reading every second fifteen times (i.e., over fifteen seconds).</p>
+<p>The second area is the setup() function. This area is ran only once, when the script is executed or started. This can be when the Arduino receives power, or when I upload a new Sketch to the device.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource {{cpp}} number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>void setup() {</span>
+<span id="cb3-2"><a href="#cb3-2"></a>  // put your setup code here, to run once:</span>
+<span id="cb3-3"><a href="#cb3-3"></a>  Serial.begin(9600);</span>
+<span id="cb3-4"><a href="#cb3-4"></a>  // Intialize the reading array</span>
+<span id="cb3-5"><a href="#cb3-5"></a>  for (int thisReading = 0; thisReading &lt; numReadings; thisReading++) {</span>
+<span id="cb3-6"><a href="#cb3-6"></a>    readings[thisReading] = 0;</span>
+<span id="cb3-7"><a href="#cb3-7"></a>  }</span>
+<span id="cb3-8"><a href="#cb3-8"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here, I first tell the Arduino to begin transmitting stuff over the serial connection, i.e., the USB cable. This ensures that I can actually read what is going on in the device - otherwise everything is stuck inside it, with no direct way to access it (unless I <em>make</em> a way…).</p>
+<p>After that, I initialize the results array with a bunch of zeroes. This simply fills up the fifteen-slot <code>readings</code> array with zeroes - once again, things R abstracts and does away with.</p>
+<p>The real meat is in the third area, the loop() function. This is ran over and over again (hence, “loop”) for as long as the device runs, or until I somehow tell it to stop. Anything that should be repeated multiple times should go in here - like our moisture tracking!</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource {{cpp}} number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href="#cb4-1"></a>void loop() {</span>
+<span id="cb4-2"><a href="#cb4-2"></a>  total = 0;</span>
+<span id="cb4-3"><a href="#cb4-3"></a>  // Iterate over numReadings and write reading to array, average out and print to serial.</span>
+<span id="cb4-4"><a href="#cb4-4"></a>  for (readIndex; readIndex &lt;= numReadings; readIndex++) {</span>
+<span id="cb4-5"><a href="#cb4-5"></a>    // Print final value and reset loop.</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    if (readIndex == numReadings) {</span>
+<span id="cb4-7"><a href="#cb4-7"></a>        // Calculate value</span>
+<span id="cb4-8"><a href="#cb4-8"></a>        average = total / numReadings;</span>
+<span id="cb4-9"><a href="#cb4-9"></a>        Serial.print("Moisture average = ");</span>
+<span id="cb4-10"><a href="#cb4-10"></a>        Serial.println(average);</span>
+<span id="cb4-11"><a href="#cb4-11"></a>        // Reset the reading array</span>
+<span id="cb4-12"><a href="#cb4-12"></a>        for (int thisReading = 0; thisReading &lt; numReadings; thisReading++) {</span>
+<span id="cb4-13"><a href="#cb4-13"></a>          readings[thisReading] = 0;</span>
+<span id="cb4-14"><a href="#cb4-14"></a>        }</span>
+<span id="cb4-15"><a href="#cb4-15"></a>      // Reset the index and start over</span>
+<span id="cb4-16"><a href="#cb4-16"></a>      readIndex = 0;</span>
+<span id="cb4-17"><a href="#cb4-17"></a>      break;</span>
+<span id="cb4-18"><a href="#cb4-18"></a>    } else {</span>
+<span id="cb4-19"><a href="#cb4-19"></a>      // If not </span>
+<span id="cb4-20"><a href="#cb4-20"></a>      readings[readIndex] = analogRead(sensorPin);</span>
+<span id="cb4-21"><a href="#cb4-21"></a>      total += readings[readIndex];</span>
+<span id="cb4-22"><a href="#cb4-22"></a>    }</span>
+<span id="cb4-23"><a href="#cb4-23"></a>  delay(delayTime);</span>
+<span id="cb4-24"><a href="#cb4-24"></a>  }</span>
+<span id="cb4-25"><a href="#cb4-25"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The code contains a few nested things, i.e., things inside of things. The main stuff happens inside the <code>for</code> loop. This loop starts from the value of <code>readIndex</code>, which in the start is zero, and runs repeatedly, every time incrementing <code>readIndex</code>by one. Finally, when the index becomes equal to the number of readings I want to do, we stop. Essentially, thus, it represents every reading that I want to do.</p>
+<p>Inside this loop exists an <code>if-else</code> statement. The first part, under <code>if</code>, is executed if the index is equal to the number of readings, and represents the case of “We’re done now, time to wrap up and leave.” The second part, under <code>else</code>, is executed in all other cases - meaning every reading we do.</p>
+<p>Starting with the <code>else</code> section (since it, paradoxically, is the main stuff we’re doing here), I take a reading from the moisture sensor using <code>analogRead(sensorPin)</code> and store it in its place in <code>readings</code>. I then add it to a total, and we’re done! Before the for loop exists, I delay execution for the amount of time I defined in-between readings, so that we don’t read a million-billion times a second.</p>
+<p>The <code>if</code> statement is executed when I’ve determined that I’ve had enough readings, so it should only run once for every average reading. It simply calculates the average, prints it to the serial console, and resets the relevant variables for a new average reading. The seriar console is a small box inside the Arduino IDE (the software I write this stuff in), which can function as a kind-of screen for anything I want. Finally, the <code>break</code> keyword is used to tell the computer, “Stop this loop immediately!”. This means that the loop is guaranteed to stop, and nothing underneath the keyword is ran.</p>
+<p>(And as I was writing this blog, it occurred to me: this means that the delay is not executed, throwing the whole thing off slightly! I will fix this in the next iteration, probably by removing the <code>break</code> altogether.)</p>
+<p>The product of this whole code snippet is some average moisture levels, as measured in voltage. Since the text is not very cool to look at, I used the Serial Plotter function inside the Arduino IDE to produce a cute little plot of the values coming in:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\images/aa01_moisturesensorgraph.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Graph of moisture values. X-axis indicates time (technically, the running order of the measurements), and the Y-axis indicates measurement in voltage (with some modification).</figcaption>
+</figure>
+</div>
+<p>In this particular interval, the moisture level was going up. Since the plant had been sitting out in the heat the whole day, I presume this was some sort of “getting used to”-situation. Alternatively, it could be water precipitating out of the soil - I genuinely have no idea, I’m a social scientist!</p>
+</section>
+<section id="what-now" class="level1">
+<h1>What Now?</h1>
+<p>This concludes step two, and to a certain extent step three, of the process. The next part will look at storing this data, as currently, I have no storage medium available. However, as the picture showed, I went and bought a data logging shield today, which comes with SD card storage. My current thought is to push the data into the EEPROM (essentially, some slightly more stable memory that persists through power failure), and then read from the EEPROM and write to the SD card in more infrequent intervals.</p>
+<p>The main difficulty, however, will be the wireless transmission. As it turns out, there are plenty of options, some free, some expensive, all difficult to set up. Currently, I’m leaning towards a LoRaWAN implementation, but we’ll see as things progress.</p>
+<p>The data should be wirelessly transmitted to the Arduino IoT cloud, from where I’d be pulling it into a webapp for stats graphing (yay!) and an Android app for sending automated notifications when the soil is running dry.</p>
+<p>Other things still on the list include weatherproofing this whole shebang, and figuring out power (solar power, baybee! Unless it turns out to be infeasible). There’s a whole lot left, so I’ll return with more blogs - thanks for reading! :)</p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{saal2023,
+  author = {Saal, Oliver},
+  title = {Building a {Wireless} {Moisture} {Sensor} with {Arduino} -
+    {Part} {I}},
+  date = {2023-06-28},
+  url = {https://osaal.github.io/posts/arduinoadventure01.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-saal2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+Saal, Oliver. 2023. <span>“Building a Wireless Moisture Sensor with
+Arduino - Part I.”</span> June 28, 2023. <a href="https://osaal.github.io/posts/arduinoadventure01.html">https://osaal.github.io/posts/arduinoadventure01.html</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
