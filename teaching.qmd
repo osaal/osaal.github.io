@@ -14,6 +14,8 @@ University courses in Finland are divided into three levels:
 
 ### Taught courses
 
+Quantitative Methods. Period I/23. Pelastusopisto - Emergency Services Academy Finland. 2 ECTS.
+
 Advanced Sociological Theory 1: Science and Technology Studies. Period II/22. Åbo Akademi University. 5 ECTS. [Link to curriculum](https://studiehandboken.abo.fi/en/course/380201.1/1293?period=2022-2024)
 
 ### Lectures and workshops
@@ -60,7 +62,7 @@ Advanced Sociological Theory 1: Science and Technology Studies. Period II/22. Å
 
 Pedagogy for Subject Teachers (20 ECTS):
 
-*  *Pedagogical Psychology* (5 ECTS, 2016)
-*  *Applied Pedagogy and Societal Development* (5 ECTS, 2015)
-*  *Didactics* (5 ECTS, 2015)
-*  *Special Needs Education* (5 ECTS, 2015)
+-   *Pedagogical Psychology* (5 ECTS, 2016)
+-   *Applied Pedagogy and Societal Development* (5 ECTS, 2015)
+-   *Didactics* (5 ECTS, 2015)
+-   *Special Needs Education* (5 ECTS, 2015)

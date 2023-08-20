@@ -15,68 +15,88 @@ about:
     - icon: newspaper
       text: ORCID
       href: https://orcid.org/0000-0002-4870-0458
+editor: 
+  markdown: 
+    wrap: 72
 ---
+
 ::: {#first-section}
-Oliver Saal is a sociologist specialising in Science and Technology Studies, and the phenomenology of scientific disciplines. My academic interests include quantitative analysis, especially network and latent factor models, Higher Education studies, and the sociology of risk perception. My free time is spent watching RuPaul's Drag Race, producing documentary films, and hobby programming.
+Oliver Saal is a sociologist specialising in Science and Technology
+Studies, and the phenomenology of scientific disciplines. My academic
+interests include quantitative analysis, especially network and latent
+factor models, Higher Education studies, and the sociology of risk
+perception. My free time is spent watching RuPaul's Drag Race, producing
+documentary films, and hobby programming.
 
 ## Education
 
-[**Åbo Akademi University**](https://abo.fi/en/) | Turku, Finland <br/>
-D.Soc.Sc. in Sociology | 2020 - current <br/>
-M.Soc.Sc. in Sociology | 2018 - 2020 <br/>
-B.Soc.Sc. in Sociology | 2015 - 2018
+[**Åbo Akademi University**](https://abo.fi/en/) \| Turku, Finland <br/>
+D.Soc.Sc. in Sociology \| 2020 - current <br/> M.Soc.Sc. in Sociology \|
+2018 - 2020 <br/> B.Soc.Sc. in Sociology \| 2015 - 2018
 
 ## Academic Achievements
-[Research](research.qmd) <br/>
-[Teaching](teaching.qmd)
 
+[Research](research.qmd) <br/> [Teaching](teaching.qmd)
 :::
 
 ## Experience
-**Doctoral Researcher** | Åbo Akademi University <br/>
-Turku, Finland <br/>
-Full-time, grant-funded <br/>
-2020 - current
 
-**Researcher** | [Finnish National Emergency Academy](https://pelastusopisto.fi/en/) <br/>
-Kuopio, Finland <br/>
-Full-time, civil servant <br/>
-2022 - 2023
+**Researcher** \| [Pelastusopisto - Emergency Services Academy
+Finland](https://pelastusopisto.fi/en/) <br/> Kuopio, Finland <br/>
+Full-time, civil servant <br/> 2022 - current
 
-**Research Assistant**,
-[The Westermarck Society ry](https://www.facebook.com/westermarckseura/), Turku, Finland (2021) <br/>
-Finnish National Emergency Academy, Kuopio, Finland (2020 - 2021) <br/>
-Åbo Akademi University, Turku, Finland (2019, 2020)
+**Doctoral Researcher** \| Åbo Akademi University <br/> Turku, Finland
+<br/> Full-time, grant-funded <br/> 2020 - current
+
+**Research Assistant**, [The Westermarck Society
+ry](https://www.facebook.com/westermarckseura/), Turku, Finland (2021)
+<br/> Finnish National Emergency Academy, Kuopio, Finland (2020 - 2021)
+<br/> Åbo Akademi University, Turku, Finland (2019, 2020)
 
 ## Languages
-Swedish - native <br/>
-Finnish - excellent/bilingual <br/>
-English - excellent <br/>
-German - beginner <br/>
-Norwegian/Scandinavian - beginner <br/>
-Latin - beginner
+
+Swedish - native <br/> Finnish - excellent/bilingual <br/> English -
+excellent <br/> German - beginner <br/> Norwegian/Scandinavian -
+beginner <br/> Latin - beginner
 
 ## Civil Society
-[**Finnish Union of University Researchers**](https://tieteentekijat.fi/en/home/) | Helsinki, Finland <br/>
-Member of the Young Researchers Committee (2023)
 
-[**The Sociological Association at Åbo Akademi University**](https://anomiabo.wixsite.com/anomi?lang=en) | Turku, Finland <br/>
-Chair of the board (2020, 2023) <br/>
-Member of the anniversary gala committee (2021) <br/>
-Secretary and PR manager (2019) <br/>
+[**Finnish Union of University
+Researchers**](https://tieteentekijat.fi/en/home/) \| Helsinki, Finland
+<br/> Member of the Young Researchers Committee (2023)
 
-[**Porvoo Youth Council**](http://www.nuvaporvoo.fi/)^[Page in Finnish and Swedish] | Porvoo, Finland <br/>
-Elected youth council member, constituency Borgå Gymnasium (2015) <br/>
-Youth representative in the Porvoo municipal council Swedish educational section (2015)
+[**The Sociological Association at Åbo Akademi
+University**](https://anomiabo.wixsite.com/anomi?lang=en) \| Turku,
+Finland <br/> Chair of the board (2020, 2023) <br/> Member of the
+anniversary gala committee (2021) <br/> Secretary and PR manager (2019)
+<br/>
+
+[**Porvoo Youth Council**](http://www.nuvaporvoo.fi/)[^1] \| Porvoo,
+Finland <br/> Elected youth council member, constituency Borgå Gymnasium
+(2015) <br/> Youth representative in the Porvoo municipal council
+Swedish educational section (2015)
+
+[^1]: Page in Finnish and Swedish
 
 ## Technical Skills
-**Programming**: R | Java | Python | HTML | CSS
 
-**Media production**: Photoshop | Lightroom | Premiere Pro | After Effects | Audition | DaVinci Resolve
+**Programming**: R \| Java \| Python \| HTML \| CSS
 
-**Statistical software**: SPSS | R | Excel | FACTOR | GraphViz | SocNetV
+**Media production**: Photoshop \| Lightroom \| Premiere Pro \| After
+Effects \| Audition \| DaVinci Resolve
+
+**Statistical software**: SPSS \| R \| Excel \| FACTOR \| GraphViz \|
+SocNetV
 
 ## Other
-Member of the documentary production group [Pakopiste Productions](https://www.facebook.com/profile.php?id=100088154507832)^[Page in Finnish] (2020 - current) <br/>
-Lecturer in English and German language at [Borgå Gymnasium](https://www.porvoo.fi/sv/fostran-och-utbildning/gymnasier-och-yrkesutbildning/borga-gymnasium/)^[Page in Swedish] upper comprehensive school, single lectures (2016) <br/>
-Freelancer in video production (2015 - 2021)
+
+Member of the documentary production group [Pakopiste
+Productions](https://www.facebook.com/profile.php?id=100088154507832)[^2]
+(2020 - current) <br/> Lecturer in English and German language at [Borgå
+Gymnasium](https://www.porvoo.fi/sv/fostran-och-utbildning/gymnasier-och-yrkesutbildning/borga-gymnasium/)[^3]
+upper comprehensive school, single lectures (2016) <br/> Freelancer in
+video production (2015 - 2021)
+
+[^2]: Page in Finnish
+
+[^3]: Page in Swedish
