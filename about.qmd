@@ -21,12 +21,11 @@ editor:
 ---
 
 ::: {#first-section}
-Oliver Saal is a sociologist specialising in Science and Technology
-Studies, and the phenomenology of scientific disciplines. My academic
-interests include quantitative analysis, especially network and latent
-factor models, Higher Education studies, and the sociology of risk
-perception. My free time is spent watching RuPaul's Drag Race, producing
-documentary films, and hobby programming.
+Oliver Saal is a sociologist of education, minorities, and security
+research. My academic interests include quantitative analysis,
+especially network and latent factor models, Higher Education studies,
+and the sociology of risk perception. My free time is spent watching
+RuPaul's Drag Race, producing documentary films, and hobby programming.
 
 ## Education
 
@@ -67,7 +66,7 @@ Researchers**](https://tieteentekijat.fi/en/home/) \| Helsinki, Finland
 
 [**The Sociological Association at Åbo Akademi
 University**](https://anomiabo.wixsite.com/anomi?lang=en) \| Turku,
-Finland <br/> Chair of the board (2020, 2023) <br/> Member of the
+Finland <br/> Chair of the board (2020, 2023-2024) <br/> Member of the
 anniversary gala committee (2021) <br/> Secretary and PR manager (2019)
 <br/>
 

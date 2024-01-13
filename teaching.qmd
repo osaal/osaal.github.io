@@ -14,11 +14,23 @@ University courses in Finland are divided into three levels:
 
 ### Taught courses
 
+Qualitative Methods. Period II/23. Pelastusopisto - Emergency Services Academy Finland. 2 ECTS.
+
 Quantitative Methods. Period I/23. Pelastusopisto - Emergency Services Academy Finland. 2 ECTS.
 
 Advanced Sociological Theory 1: Science and Technology Studies. Period II/22. Åbo Akademi University. 5 ECTS. [Link to curriculum](https://studiehandboken.abo.fi/en/course/380201.1/1293?period=2022-2024)
 
 ### Lectures and workshops
+
+**2024**
+
+*Systematic Literature Review, Practical Advice*. Internal workshop. Pelastusopisto - Emergency Services Academy Finland, Department of Research, Development, and Innovation.
+
+**2023**
+
+*Regression Analysis*. Advanced Sociological Methods 2. Advanced level. Åbo Akademi University.
+
+*Statistical Inference*. Advanced Sociological Methods 2. Advanced level. Åbo Akademi University.
 
 **2022**
 

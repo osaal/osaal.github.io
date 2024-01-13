@@ -6,12 +6,13 @@ These pages contain my research, with publication links and other contents as av
 
 Please reference the original sources, not this website.
 
-*Updated 20 August 2023*
+*Updated 13 January 2024*
 
 ## Current Research Projects
 
 -   *Attitudes on Science and Scientific Quality of Finnish University Professors*. Doctoral thesis in Sociology, Åbo Akademi University. Financing by the Waldemar von Frenckell Foundation and the Kone Foundation.
 -   Affective risk and psychological networks, with Alisa Puustinen & Jan-Erik Johanson.
+-   *Emergency Services Zero Tolerance to Discrimination and Harassment - Fact or Fiction?* Project manager and principal investigator of research project at Pelastusopisto - Emergency Services Academy Finland. Financing by the Fire Safety Fund (Palosuojelurahasto).
 
 ## Research Publications
 
@@ -31,11 +32,13 @@ Saal, Oliver. 2018. *Interaction between Online and Offline Worlds. Gender and E
 
 Saal, Oliver & Alisa Puustinen. n.d. [*Measuring Subjective Risk Perception as a Latent Construct: A Semi-Confirmatory Factor Analytic Approach*](https://osaal.github.io/resources/saalpuustinen2023.html). \[Article manuscript.\] Supplementary files available at: <https://osf.io/cs97b/>. Pre-print version available soon on OSF, currently behind the title link. Currently reworking for submission.
 
-Johanson, Jan-Erik; Alisa Puustinen & Oliver Saal. n.d. *Networks of Risk Perception*. \[Chapter in edited monograph.\] Abstract accepted for publication, currently writing manuscript.
+Johanson, Jan-Erik; Alisa Puustinen & Oliver Saal. n.d. *Ignorance is Bliss? Network Analysis Shaping our Understanding of Security Risk Perceptions.* \[Chapter in edited monograph.\] Manuscript submitted for publication, expected publication in 2024.
 
-Helander, Mika & Oliver Saal. n.d. *Evaluating the Effects of Globalisation on Work: A Phenomenological Model of Abstract Evaluations Based on Awareness, Learning, and Knowledge*. \[Article manuscript.\] Submitted for peer review in *Global Labour Journal*.
+Helander, Mika & Oliver Saal. n.d. *Evaluating the Effects of Globalisation on Work: A Phenomenological Model of Abstract Evaluations Based on Awareness, Learning, and Knowledge*. \[Article manuscript.\]
 
 ## Conference Proceedings
+
+*Yhdessä eteenpäin...? Työryhmäkeskustelu turvallisuustutkimuksen yhteistyön organisointimahdollisuuksista* \[*Forward together...? Working Group Discussion on the Organisational Possibilities of Collaboration in Safety and Security Research*\]. With Alisa Puustinen. Conference on Administrative and Local Government Studies 2023, working group Safety and Security Studies. 17 November 2023. Unpublished.
 
 *Riskitodennäköisyys ja verkostoanalyysi* \[*Risk Probability and Network Analysis*\]. With Alisa Puustinen. Sociology Days 2023, working group Sociology of Safety and National Defense. 24 March 2023. *Sosiologia*, upcoming.
 
@@ -46,6 +49,12 @@ Helander, Mika & Oliver Saal. n.d. *Evaluating the Effects of Globalisation on W
 *Uhkien ja riskien koettujen todennäköisyyksien jäsentäminen* \[*Conceptualising Perceived Probabilities of Threats and Risks*\]. With Alisa Puustinen. Sociology Days 2021, working group Sociology of Safety and National Defense. 12 March 2021. *Sosiologia 58*(2), 202.
 
 *Evaluating the Effects of Globalisation on Work*. With Mika Helander. Sociology Days 2021, working group Global Sociology. 11 March 2021. *Sosiologia 58*(2), 180.
+
+## Conference Organising
+
+Working group *Sociology of Security and National Defense* at the Sociology Days 2024, 21-22 March 2024, Kuopio, Finland. With Miina Kaarkoski (National Defense University). Link to conference website: <https://sosiologipaivat.fi/annual-conference-2024/>
+
+Working group *Safety and Security Studies* at the Conference on Administrative and Local Government Studies 2023, 16-17 November 2023, Turku, Finland. With Alisa Puustinen (Ministry of the Interior), Brita Somerkoski (University of Turku) & Päivi Mäkelä (Pelastusopisto). Link to conference website: <https://www.abo.fi/en/hktp2023/>
 
 ## Research Financing
 
