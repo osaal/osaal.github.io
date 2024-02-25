@@ -6,13 +6,12 @@ These pages contain my research, with publication links and other contents as av
 
 Please reference the original sources, not this website.
 
-*Updated 13 January 2024*
+*Updated 25 February 2024*
 
 ## Current Research Projects
 
--   *Attitudes on Science and Scientific Quality of Finnish University Professors*. Doctoral thesis in Sociology, Åbo Akademi University. Financing by the Waldemar von Frenckell Foundation and the Kone Foundation.
--   Affective risk and psychological networks, with Alisa Puustinen & Jan-Erik Johanson.
 -   *Emergency Services Zero Tolerance to Discrimination and Harassment - Fact or Fiction?* Project manager and principal investigator of research project at Pelastusopisto - Emergency Services Academy Finland. Financing by the Fire Safety Fund (Palosuojelurahasto).
+-   Affective risk and psychological networks, with Alisa Puustinen & Jan-Erik Johanson.
 
 ## Research Publications
 
@@ -38,9 +37,13 @@ Helander, Mika & Oliver Saal. n.d. *Evaluating the Effects of Globalisation on W
 
 ## Conference Proceedings
 
+*Yksilön riskikäsitysten ja omatoimisen varautumisen kausaalisuhteen merkitys kokonaisturvallisuudelle \[The Relevance of the Causal Connection between an Individual's Risk Perception and Self-Preparedness for Total Security\]*. Sociology Days 2024, working group Sociology of Safety and National Defense. 21 March 2024. *Sosiologia*, upcoming.
+
+*Pelastusalalla ja ensihoidossa esiintyvä syrjintä ja häirintä oikeuksien toteutumisen näkökulmasta* \[*Discrimination and harassment in the rescue services and out-of-hospital emergency health care from the perspective of the fulfilling of rights\]*. With Iida Silfverhuth and Konsta Huovinen. Sociology Days 2024, working group Fulfilling of Rights in the Welfare State. 21 March 2024. *Sosiologia*, upcoming.
+
 *Yhdessä eteenpäin...? Työryhmäkeskustelu turvallisuustutkimuksen yhteistyön organisointimahdollisuuksista* \[*Forward together...? Working Group Discussion on the Organisational Possibilities of Collaboration in Safety and Security Research*\]. With Alisa Puustinen. Conference on Administrative and Local Government Studies 2023, working group Safety and Security Studies. 17 November 2023. Unpublished.
 
-*Riskitodennäköisyys ja verkostoanalyysi* \[*Risk Probability and Network Analysis*\]. With Alisa Puustinen. Sociology Days 2023, working group Sociology of Safety and National Defense. 24 March 2023. *Sosiologia*, upcoming.
+*Riskitodennäköisyys ja verkostoanalyysi* \[*Risk Probability and Network Analysis*\]. With Alisa Puustinen. Sociology Days 2023, working group Sociology of Safety and National Defense. 24 March 2023. *Sosiologia* *60*(2), 145.
 
 *The Phenomenological Structure of Scientific Disciplines*. Draft chapters of doctoral thesis. Finnish Symposium for Science and Technology Studies, 8 July 2022. Unpublished.
 
@@ -66,3 +69,9 @@ Working group *Safety and Security Studies* at the Conference on Administrative 
 ### Articles
 
 Saal, Oliver. 2023. *Suomalaiset ovat tyytyväisiä pelastustoimintaan - mutta osaavatko he itse toimia vaaratilanteissa?* \[*Finns are satisfied with emergency services - but do they know how to act in risky situations?*\]. *Palopäällystö* 2/2023: 29. Available: <https://issuu.com/palopaallysto/docs/palopaallysto-lehti-2_2023>.
+
+### Blog Posts
+
+Saal, Oliver. 2024. *Pelastusalalla epäasiallista käytöstä tulee alan sisältä ja sen ulkopuolelta* \[*The Emergency Services Meets Inappropriate Behaviour from Within and Without*\]. *SPAL:in Turvallisuuden tekijät -blogi*, 22.2.2024. Available: <https://www.spal.fi/blogs/pelastusalalla-epaasiallista-kaytosta-tulee-alan-sisalta-ja-sen-ulkopuolelta/>
+
+Saal, Oliver. 2024. *Avoin tiede pelastusalan arvostuksen kohottojana* \[*Open Science as a Positive Influence on the Respect of the Emergency Services*\]. *Pelastusopiston blogi* 5.2.2024. Available: <https://www.pelastusopisto.fi/blogi/avoin-tiede-pelastusalan-arvostuksen-kohottajana/>.
