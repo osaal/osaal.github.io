@@ -6,11 +6,6 @@ listing:
     contents: "resources/manuscripts"
     sort: "date desc"
     categories: unnumbered
-  - id: slides
-    type: table
-    contents: "resources/slides"
-    sort: "date desc"
-    categories: unnumbered
 ---
 
 Below are resources I have created, e.g., unpublished manuscripts, conference presentations, etc. Licensing information is available on each resource's page.
@@ -20,7 +15,3 @@ The bottom of each resource's page contains reference information, please follow
 ## Manuscripts
 ::: {#manuscripts}
 :::
-
-## Presentations
-::: {#slides}
-::: 

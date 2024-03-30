@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Oliver Saal - Thinking Out Loud</title>
+<title>Oliver Saal - Resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,20 +73,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-blog-posts .list');
+    const listingTargetEl = window.document.querySelector('#listing-manuscripts .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-blog-posts'] = new List('listing-blog-posts', options);
+    window['quarto-listings']['listing-manuscripts'] = new List('listing-manuscripts', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -181,11 +181,11 @@ window.Quarto = {
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link active" href="./resources.html" aria-current="page"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Thinking Out Loud</span></a>
   </li>  
 </ul>
@@ -217,14 +217,20 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="Arduino">Arduino</div><div class="category" data-category="Pelastusopisto Emergency Services Academy Finland">Pelastusopisto Emergency Services Academy Finland</div><div class="category" data-category="advocacy">advocacy</div><div class="category" data-category="city planning">city planning</div><div class="category" data-category="early career researchers">early career researchers</div><div class="category" data-category="english">english</div><div class="category" data-category="finnish">finnish</div><div class="category" data-category="hobby">hobby</div><div class="category" data-category="integrated computing">integrated computing</div><div class="category" data-category="moisture sensor">moisture sensor</div><div class="category" data-category="new public management">new public management</div><div class="category" data-category="public transportation">public transportation</div><div class="category" data-category="research">research</div><div class="category" data-category="safety studies">safety studies</div><div class="category" data-category="science policy">science policy</div><div class="category" data-category="security studies">security studies</div><div class="category" data-category="wireless transmission">wireless transmission</div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#manuscripts" id="toc-manuscripts" class="nav-link active" data-scroll-target="#manuscripts">Manuscripts</a></li>
+  </ul>
+</nav>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="General Risk Probability Perception Scale">General Risk Probability Perception Scale</div><div class="category" data-category="direct experience">direct experience</div><div class="category" data-category="near misses">near misses</div><div class="category" data-category="risk perception">risk perception</div><div class="category" data-category="semi-confirmatory factor analysis">semi-confirmatory factor analysis</div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Thinking Out Loud</h1>
+<h1 class="title">Resources</h1>
 </div>
 
 
@@ -241,184 +247,64 @@ window.Quarto = {
 </header>
 
 
-<p>Select topics and/or preferred language in <strong>Categories</strong>. I will write in whatever language I feel like at the time, not just English.</p>
-<div id="listing-blog-posts" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="hobby,integrated computing,Arduino,wireless transmission,moisture sensor" data-listing-date-sort="1687899600000" data-listing-file-modified-sort="1687963438486" data-listing-date-modified-sort="1687963438000" data-listing-reading-time-sort="13" data-listing-word-count-sort="2536">
-<div class="thumbnail">
-<p><a href="./posts/arduinoadventure01.html" class="no-external"></a></p><a href="./posts/arduinoadventure01.html" class="no-external">
-<p class="card-img-top"><img src="images\aa01_testingsetup.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/arduinoadventure01.html" class="no-external"></a></p>
+<p>Below are resources I have created, e.g., unpublished manuscripts, conference presentations, etc. Licensing information is available on each resource’s page.</p>
+<p>The bottom of each resource’s page contains reference information, please follow it when referencing.</p>
+<section id="manuscripts" class="level2">
+<h2 class="anchored" data-anchor-id="manuscripts">Manuscripts</h2>
+<div id="listing-manuscripts" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-manuscripts-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-manuscripts'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/arduinoadventure01.html" class="no-external">Building a Wireless Moisture Sensor with Arduino - Part I</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/arduinoadventure01.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hobby'); return false;">
-hobby
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('integrated computing'); return false;">
-integrated computing
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Arduino'); return false;">
-Arduino
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('wireless transmission'); return false;">
-wireless transmission
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('moisture sensor'); return false;">
-moisture sensor
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/arduinoadventure01.html" class="no-external">This spring, my partner and I received an allotment garden. Being techy, lazy, and complete integrated tech beginners, we decided to make our own wireless moisture sensor to know when we have to water. This is a blog about that journey! </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/arduinoadventure01.html" class="no-external">
-<div class="listing-date">
-Jun 28, 2023
-</div>
-<div class="listing-author">
-Oliver Saal
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="research,safety studies,security studies,Pelastusopisto Emergency Services Academy Finland,english" data-listing-date-sort="1687294800000" data-listing-file-modified-sort="1687360061038" data-listing-date-modified-sort="1687360061000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1586">
-<div class="thumbnail">
-<p><a href="./posts/safetyandsecuritystudies.html" class="no-external"></a></p><a href="./posts/safetyandsecuritystudies.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/safetyandsecuritystudies.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/safetyandsecuritystudies.html" class="no-external">Among the Firefighters</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/safetyandsecuritystudies.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('research'); return false;">
-research
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('safety studies'); return false;">
-safety studies
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('security studies'); return false;">
-security studies
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Pelastusopisto Emergency Services Academy Finland'); return false;">
-Pelastusopisto Emergency Services Academy Finland
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('english'); return false;">
-english
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/safetyandsecuritystudies.html" class="no-external">I spent the past half a year doing safety and security studies research. This blog is about that experience. </a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/safetyandsecuritystudies.html" class="no-external">
-<div class="listing-date">
-Jun 21, 2023
-</div>
-<div class="listing-author">
-Oliver Saal
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="public transportation,city planning,new public management,finnish" data-listing-date-sort="1681333200000" data-listing-file-modified-sort="1681381763266" data-listing-date-modified-sort="1681381763000" data-listing-reading-time-sort="4" data-listing-word-count-sort="780">
-<div class="thumbnail">
-<p><a href="./posts/hsljatulosvastuu.html" class="no-external"></a></p><a href="./posts/hsljatulosvastuu.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/hsljatulosvastuu.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/hsljatulosvastuu.html" class="no-external">Julkinen liikenne on peruspalvelu, ei sijoituskohde</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/hsljatulosvastuu.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('public transportation'); return false;">
-public transportation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('city planning'); return false;">
-city planning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('new public management'); return false;">
-new public management
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('finnish'); return false;">
-finnish
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/hsljatulosvastuu.html" class="no-external">HSL käsittää itsensä ensisijaisesti taloudellisesti tuottavana toimijana. Todellisuudessa he tuottavat julkista peruspalvelua, ei sijoitustoimintaa.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/hsljatulosvastuu.html" class="no-external">
-<div class="listing-date">
-Apr 13, 2023
-</div>
-<div class="listing-author">
-Oliver Saal
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="advocacy,science policy,early career researchers,english" data-listing-date-sort="1679349600000" data-listing-file-modified-sort="1679413489043" data-listing-date-modified-sort="1679413489000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1205">
-<div class="thumbnail">
-<p><a href="./posts/fuurtecrmeeting.html" class="no-external"></a></p><a href="./posts/fuurtecrmeeting.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/fuurtecrmeeting.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/fuurtecrmeeting.html" class="no-external">Grant Us the Strength - And Maybe Also Healthcare?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/fuurtecrmeeting.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('advocacy'); return false;">
-advocacy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('science policy'); return false;">
-science policy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('early career researchers'); return false;">
-early career researchers
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('english'); return false;">
-english
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/fuurtecrmeeting.html" class="no-external">Thoughts on the early career researcher financing model in Finland.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/fuurtecrmeeting.html" class="no-external">
-<div class="listing-date">
-Mar 21, 2023
-</div>
-<div class="listing-author">
-Oliver Saal
-</div>
-</a>
-</div>
-</div>
-</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="risk perception,semi-confirmatory factor analysis,General Risk Probability Perception Scale,direct experience,near misses" data-listing-date-sort="1687035600000" data-listing-file-modified-sort="1687093927310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12" data-listing-title-sort="Measuring Subjective Risk Perception as a Latent Construct" data-listing-filename-sort="saalpuustinen2023.qmd">
+<td>
+<span class="listing-date">Jun 18, 2023</span>
+</td>
+<td>
+<a href="./resources/manuscripts/saalpuustinen2023.html" class="title listing-title">Measuring Subjective Risk Perception as a Latent Construct</a>
+</td>
+<td>
+<span class="listing-author">Oliver Saal, Alisa Puustinen</span>
+</td>
+</tr>
+</tbody>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
@@ -426,6 +312,7 @@ No matching items
 
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
