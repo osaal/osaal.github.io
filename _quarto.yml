@@ -28,7 +28,7 @@ website:
       - icon: github
         href: https://github.com/osaal
       - icon: envelope
-        href: mailto:oliver.saal@abo.fi
+        href: mailto:oliver.saal@proton.me
   
   sidebar:
     - title: "Me"
