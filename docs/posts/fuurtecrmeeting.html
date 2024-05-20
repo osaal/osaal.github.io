@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -239,7 +239,7 @@ cookieconsent.run({
 <p>If I were to summarise the main takeaways from the meeting, it would be this: the problems of doctoral students country-wide stem mostly from insecure funding. Again and again, the topic of funding rose up: whether it was the University of Oulu negotiating automatic 10 per cent part-time work contracts for grant researchers, the Ministry of Education and Culture pushing for a shortened doctoral track and interest organisations protesting due to the lack of funding, or the University of Turku laying off 50 people and pushing the rest harder on securing external financing, it all came back to money.</p>
 <p>The topic I want to work on in this committee, and more general in science policy, is indeed this problem of financing. Finland follows a very peculiar model of doctoral financing, where a large portion of the funding stems from private foundation grants. While this system allows for a certain flexibility in funding opportunities and specialised research, it also presents major problems.</p>
 <p>Firstly, the disparity between grant and salary income levels is far too wide. The average monthly grant size depends on the discipline - itself a questionable aspect! - but varies between 2 100 euros and 2 400 euros gross <span class="citation" data-cites="siekkinen2021">(<a href="#ref-siekkinen2021" role="doc-biblioref">Siekkinen et al. 2021</a>)</span>. Meanwhile, the minimum recommended starting salary for doctoral researchers in the general collective agreement is 2 200 euros, rising up to a recommended minimum of 2 800 euros in the final stretch of the dissertation process<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Granted, these are recommendations - and not, for instance, followed at my home university - but the possible disparity is large. It is noteworthy, that in either case, doctoral researchers make considerably less than the average Finnish salary for a person with a Master’s degree (the prerequirement for doctoral studies in Finland), regardless of field.</p>
-<div class="no-row-height column-margin column-container"><p><sup>1</sup>&nbsp;General Collective Agreement for Universities, 1 Aug 2022-31 Mar 2024, available <a href="https://www.sivista.fi/wp-content/uploads/2022/06/Yo-tes-1.8.2022-31.3.2024-final_EN.pdf">here</a>. Retrieved 21 March 2023.</p></div><p>If this gross income disparity was not enough, there is the problems of work benefits. Grant researchers are not employed by anyone, meaning that they lack access to work benefits such as work-provided healthcare. With the current state of the Finnish public healthcare system, privately organised work healthcare is the only reasonable course of action. Considering that a large number of doctoral researchers suffer from mental health issues (themselves related to funding stresses in part!), this access would be crucial <span class="citation" data-cites="guthrie2017">(see e.g., <a href="#ref-guthrie2017" role="doc-biblioref">Guthrie et al. 2017</a>)</span>. Work healthcare also conducts pre-emptive check-ups to a much greater extent than public healthcare, which allows for early recognition of burnout, depression, anxiety, and other such work-related illnesses that arise in the academy. Of course, this healthcare is available to individuals outside a work healthcare agreement, too - if they pay out of pocket or have an insurance policy that covers such expenses. Hardly a viable option for the well-below-median income of a grant researcher, many of whom have families to sustain.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;General Collective Agreement for Universities, 1 Aug 2022-31 Mar 2024, available <a href="https://www.sivista.fi/wp-content/uploads/2022/06/Yo-tes-1.8.2022-31.3.2024-final_EN.pdf">here</a>. Retrieved 21 March 2023.</p></div></div><p>If this gross income disparity was not enough, there is the problems of work benefits. Grant researchers are not employed by anyone, meaning that they lack access to work benefits such as work-provided healthcare. With the current state of the Finnish public healthcare system, privately organised work healthcare is the only reasonable course of action. Considering that a large number of doctoral researchers suffer from mental health issues (themselves related to funding stresses in part!), this access would be crucial <span class="citation" data-cites="guthrie2017">(see e.g., <a href="#ref-guthrie2017" role="doc-biblioref">Guthrie et al. 2017</a>)</span>. Work healthcare also conducts pre-emptive check-ups to a much greater extent than public healthcare, which allows for early recognition of burnout, depression, anxiety, and other such work-related illnesses that arise in the academy. Of course, this healthcare is available to individuals outside a work healthcare agreement, too - if they pay out of pocket or have an insurance policy that covers such expenses. Hardly a viable option for the well-below-median income of a grant researcher, many of whom have families to sustain.</p>
 <p>There is also the curious problem of taxation. Private research grants in Finland are exempt from taxation (except for a few obligatory health care and public broadcasting-related fees, totaling a few per cent of the income) up to a certain threshold, adjusted yearly by the government. Currently, this threshold is approximately 25 000 euros gross, meaning that most grants fall just below this threshold. Taxes accrue only on the part crossing the threshold. This is, in theory, a just system, but the problems arise when considering tax rebates. Simply put: if you pay no taxes, you get no rebate. This means no deductions for having a home office, no deductions for work-related expenses like literature, no work travel deductions. All of these deductions are, in general, available to salaried researchers, as they inevitably pay some level of tax on their salary.</p>
 <p>I cannot say the exact numbers (and I would love to see an economist work through them!), but these multiple disparities compound to make the net income of a grant researcher considerably lower than that of a salaried doctoral researcher. There are, however, a few attempts at solving this.</p>
 <p>University of Eastern Finland was the first university in Finland to enact a university-wide policy of automatically salarying <em>every</em> grant researcher, regardless of position, <a href="https://www.uef.fi/en/article/uef-takes-a-significant-step-to-improve-the-status-of-grant-funded-researchers-through-part-time">with a 10 % part-time work contract</a>. This enables grant researchers access to work healthcare and other resources, as well as places them legally in a similar position as other salaried researchers. This contract is only available for researchers with grants lasting at least one year, but the practice of giving working grants shorter than a year should regardless be discontinued, due to the major discontinuities such practices create.</p>
@@ -350,6 +350,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -384,7 +402,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

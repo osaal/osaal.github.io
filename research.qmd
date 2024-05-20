@@ -6,14 +6,17 @@ These pages contain my research, with publication links and other contents as av
 
 Please reference the original sources, not this website.
 
-*Updated 30 March 2024*
+*Updated 20 May 2024*
 
 ## Current Research Projects
 
 -   *Emergency Services Zero Tolerance to Discrimination and Harassment - Fact or Fiction?* Project manager and principal investigator of research project at Pelastusopisto - Emergency Services Academy Finland. Financing by the Fire Safety Fund (Palosuojelurahasto).
--   Affective risk and psychological networks, with Alisa Puustinen & Jan-Erik Johanson.
 
 ## Research Publications
+
+### Chapters in Edited Volumes
+
+Johanson, Jan-Erik, Alisa Puustinen & Oliver Saal. 2024. *Ignorance is Bliss? Network Analysis Shaping our Understanding of Security Risk Perceptions*. In Petri Uusikylä, Harri Jalonen & Annukka Jokipii (eds.). "Information Resilience in a Complex System of National Security". Expected publication in October 2024. Palgrave Macmillan.
 
 ### Reports
 
@@ -30,8 +33,6 @@ Saal, Oliver. 2018. *Interaction between Online and Offline Worlds. Gender and E
 ### Unpublished Manuscripts
 
 Saal, Oliver & Alisa Puustinen. n.d. [*Measuring Subjective Risk Perception as a Latent Construct: A Semi-Confirmatory Factor Analytic Approach*](https://osaal.github.io/resources/saalpuustinen2023.html). \[Article manuscript.\] Supplementary files available at: <https://osf.io/cs97b/>. Pre-print version available soon on OSF, currently behind the title link. Currently reworking for submission.
-
-Johanson, Jan-Erik; Alisa Puustinen & Oliver Saal. n.d. *Ignorance is Bliss? Network Analysis Shaping our Understanding of Security Risk Perceptions.* \[Chapter in edited monograph.\] Manuscript submitted for publication, expected publication in 2024.
 
 Helander, Mika & Oliver Saal. n.d. *Evaluating the Effects of Globalisation on Work: A Phenomenological Model of Abstract Evaluations Based on Awareness, Learning, and Knowledge*. \[Article manuscript.\]
 

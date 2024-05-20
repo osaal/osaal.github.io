@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -205,7 +205,7 @@ cookieconsent.run({
 <section id="taught-courses" class="level3">
 <h3 class="anchored" data-anchor-id="taught-courses">Taught courses</h3>
 <p>Qualitative Methods. Intermediate level. Period II/23. Pelastusopisto - Emergency Services Academy Finland. 2 ECTS.</p>
-<p>Quantitative Methods. Period I/23. Intermediate level. Pelastusopisto - Emergency Services Academy Finland. 2 ECTS.</p>
+<p>Quantitative Methods. Intermediate level. Period I/23. Pelastusopisto - Emergency Services Academy Finland. 2 ECTS.</p>
 <p>Advanced Sociological Theory 1: Science and Technology Studies. Advanced level. Period II/22. Åbo Akademi University. 5 ECTS. <a href="https://studiehandboken.abo.fi/en/course/380201.1/1293?period=2022-2024">Link to curriculum</a></p>
 </section>
 <section id="lectures-and-workshops" class="level3">
@@ -238,9 +238,9 @@ cookieconsent.run({
 <section id="supervision-of-theses" class="level3">
 <h3 class="anchored" data-anchor-id="supervision-of-theses">Supervision of theses</h3>
 <p><strong>Main supervision:</strong></p>
-<p>Bachelor of Rescue Services, Pelastusopisto - Emergency Services Academy Finland. In writing. Expected publication in 2024.</p>
+<p>Heinonen, Anssi. 2024. Palo-osastoinnin pitävyys asuin- ja pienkerrostalopaloissa 2020–2023. [The Effectiveness of Fire Compartmentation in Residential and Low-Rise Apartment Building Fires 2020–2023]. Bachelor of Rescue Services, Pelastusopisto - Emergency Services Academy Finland. Link: <a href="https://urn.fi/URN:NBN:fi:amk-2024051512102" class="uri">https://urn.fi/URN:NBN:fi:amk-2024051512102</a></p>
 <p><strong>Supporting supervision:</strong></p>
-<p>Bachelor of Rescue Services, Pelastusopisto - Emergency Services Academy Finland. Supporting supervision in academic and methodological aspects. Submitted and accepted. Expected publication in April 2024.</p>
+<p>Huovinen, Konsta &amp; Rimpiläinen, Maki. 2024. Syrjinnän ja häirinnän laajuus ja ilmeneminen pelastusalalla Suomessa: Systemaattinen kirjallisuuskatsaus. [The Scope and Manifestation of Discrimination and Harassment in the Emergency Services Sector in Finland: A Systematic Literature Review]. Bachelor of Rescue Services, Pelastusopisto - Emergency Services Academy Finland. Supporting supervision in academic and methodological aspects. Main supervisor: Siiri Pohjoinen. Link: <a href="https://urn.fi/URN:NBN:fi:amk-202403285429" class="uri">https://urn.fi/URN:NBN:fi:amk-202403285429</a></p>
 </section>
 <section id="formal-pedagogical-education" class="level3">
 <h3 class="anchored" data-anchor-id="formal-pedagogical-education">Formal Pedagogical Education</h3>
@@ -336,6 +336,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -370,7 +388,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

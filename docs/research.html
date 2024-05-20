@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -193,6 +193,7 @@ cookieconsent.run({
   <li><a href="#current-research-projects" id="toc-current-research-projects" class="nav-link active" data-scroll-target="#current-research-projects">Current Research Projects</a></li>
   <li><a href="#research-publications" id="toc-research-publications" class="nav-link" data-scroll-target="#research-publications">Research Publications</a>
   <ul class="collapse">
+  <li><a href="#chapters-in-edited-volumes" id="toc-chapters-in-edited-volumes" class="nav-link" data-scroll-target="#chapters-in-edited-volumes">Chapters in Edited Volumes</a></li>
   <li><a href="#reports" id="toc-reports" class="nav-link" data-scroll-target="#reports">Reports</a></li>
   <li><a href="#theses" id="toc-theses" class="nav-link" data-scroll-target="#theses">Theses</a></li>
   <li><a href="#unpublished-manuscripts" id="toc-unpublished-manuscripts" class="nav-link" data-scroll-target="#unpublished-manuscripts">Unpublished Manuscripts</a></li>
@@ -232,16 +233,19 @@ cookieconsent.run({
 
 <p>These pages contain my research, with publication links and other contents as available. Data will be added when possible.</p>
 <p>Please reference the original sources, not this website.</p>
-<p><em>Updated 30 March 2024</em></p>
+<p><em>Updated 20 May 2024</em></p>
 <section id="current-research-projects" class="level2">
 <h2 class="anchored" data-anchor-id="current-research-projects">Current Research Projects</h2>
 <ul>
 <li><em>Emergency Services Zero Tolerance to Discrimination and Harassment - Fact or Fiction?</em> Project manager and principal investigator of research project at Pelastusopisto - Emergency Services Academy Finland. Financing by the Fire Safety Fund (Palosuojelurahasto).</li>
-<li>Affective risk and psychological networks, with Alisa Puustinen &amp; Jan-Erik Johanson.</li>
 </ul>
 </section>
 <section id="research-publications" class="level2">
 <h2 class="anchored" data-anchor-id="research-publications">Research Publications</h2>
+<section id="chapters-in-edited-volumes" class="level3">
+<h3 class="anchored" data-anchor-id="chapters-in-edited-volumes">Chapters in Edited Volumes</h3>
+<p>Johanson, Jan-Erik, Alisa Puustinen &amp; Oliver Saal. 2024. <em>Ignorance is Bliss? Network Analysis Shaping our Understanding of Security Risk Perceptions</em>. In Petri Uusikylä, Harri Jalonen &amp; Annukka Jokipii (eds.). “Information Resilience in a Complex System of National Security”. Expected publication in October 2024. Palgrave Macmillan.</p>
+</section>
 <section id="reports" class="level3">
 <h3 class="anchored" data-anchor-id="reports">Reports</h3>
 <p>Saal, Oliver &amp; Alisa Puustinen. 2023. <em>Suomalaisten pelastusasenteet 2023</em>. [<em>Finnish Emergency Services Attutides 2023</em>. Research report.] Helsinki: Ministry of the Interior. Link: <a href="http://urn.fi/URN:ISBN:978-952-324-944-8" class="uri">http://urn.fi/URN:ISBN:978-952-324-944-8</a>.</p>
@@ -255,7 +259,6 @@ cookieconsent.run({
 <section id="unpublished-manuscripts" class="level3">
 <h3 class="anchored" data-anchor-id="unpublished-manuscripts">Unpublished Manuscripts</h3>
 <p>Saal, Oliver &amp; Alisa Puustinen. n.d. <a href="https://osaal.github.io/resources/saalpuustinen2023.html"><em>Measuring Subjective Risk Perception as a Latent Construct: A Semi-Confirmatory Factor Analytic Approach</em></a>. [Article manuscript.] Supplementary files available at: <a href="https://osf.io/cs97b/" class="uri">https://osf.io/cs97b/</a>. Pre-print version available soon on OSF, currently behind the title link. Currently reworking for submission.</p>
-<p>Johanson, Jan-Erik; Alisa Puustinen &amp; Oliver Saal. n.d. <em>Ignorance is Bliss? Network Analysis Shaping our Understanding of Security Risk Perceptions.</em> [Chapter in edited monograph.] Manuscript submitted for publication, expected publication in 2024.</p>
 <p>Helander, Mika &amp; Oliver Saal. n.d. <em>Evaluating the Effects of Globalisation on Work: A Phenomenological Model of Abstract Evaluations Based on Awareness, Learning, and Knowledge</em>. [Article manuscript.]</p>
 </section>
 </section>
@@ -377,6 +380,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -411,7 +432,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

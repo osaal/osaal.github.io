@@ -16,7 +16,7 @@ University courses in Finland are divided into three levels:
 
 Qualitative Methods. Intermediate level. Period II/23. Pelastusopisto - Emergency Services Academy Finland. 2 ECTS.
 
-Quantitative Methods. Period I/23. Intermediate level. Pelastusopisto - Emergency Services Academy Finland. 2 ECTS.
+Quantitative Methods. Intermediate level. Period I/23. Pelastusopisto - Emergency Services Academy Finland. 2 ECTS.
 
 Advanced Sociological Theory 1: Science and Technology Studies. Advanced level. Period II/22. Åbo Akademi University. 5 ECTS. [Link to curriculum](https://studiehandboken.abo.fi/en/course/380201.1/1293?period=2022-2024)
 
@@ -74,11 +74,13 @@ Advanced Sociological Theory 1: Science and Technology Studies. Advanced level. 
 
 **Main supervision:**
 
-Bachelor of Rescue Services, Pelastusopisto - Emergency Services Academy Finland. In writing. Expected publication in 2024.
+Heinonen, Anssi. 2024. Palo-osastoinnin pitävyys asuin- ja pienkerrostalopaloissa 2020–2023. [The Effectiveness of Fire Compartmentation in
+Residential and Low-Rise Apartment Building Fires 2020–2023]. Bachelor of Rescue Services, Pelastusopisto - Emergency Services Academy Finland. Link: <https://urn.fi/URN:NBN:fi:amk-2024051512102>
 
 **Supporting supervision:**
 
-Bachelor of Rescue Services, Pelastusopisto - Emergency Services Academy Finland. Supporting supervision in academic and methodological aspects. Submitted and accepted. Expected publication in April 2024.
+Huovinen, Konsta & Rimpiläinen, Maki. 2024. Syrjinnän ja häirinnän laajuus ja ilmeneminen pelastusalalla Suomessa: Systemaattinen kirjallisuuskatsaus. [The Scope and Manifestation of Discrimination and Harassment in the Emergency
+Services Sector in Finland: A Systematic Literature Review]. Bachelor of Rescue Services, Pelastusopisto - Emergency Services Academy Finland. Supporting supervision in academic and methodological aspects. Main supervisor: Siiri Pohjoinen. Link: <https://urn.fi/URN:NBN:fi:amk-202403285429>
 
 ### Formal Pedagogical Education
 
