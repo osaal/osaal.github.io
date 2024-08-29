@@ -6,7 +6,7 @@ These pages contain my research, with publication links and other contents as av
 
 Please reference the original sources, not this website.
 
-*Updated 20 May 2024*
+*Updated 29 August 2024*
 
 ## Current Research Projects
 
@@ -14,9 +14,13 @@ Please reference the original sources, not this website.
 
 ## Research Publications
 
+### Peer-Reviewed Articles
+
+Saal, Oliver, Iida Silfverhuth & Konsta Huovinen. 2024. *Epäasiallisen ja väkivaltaisen kohtelun suomen- ja ruotsinkielisen mittarin validointi pelastus- ja ensihoitoalalla*. \[*Validation of Finnish and Swedish Language Instrument on Inappropriate and Violent Behaviour in the Rescue and Emergency Services*\]. Registered report. Stage 1 evaluation complete. To be archived in the University of Jyväskylä archive.
+
 ### Chapters in Edited Volumes
 
-Johanson, Jan-Erik, Alisa Puustinen & Oliver Saal. 2024. *Ignorance is Bliss? Network Analysis Shaping our Understanding of Security Risk Perceptions*. In Petri Uusikylä, Harri Jalonen & Annukka Jokipii (eds.). "Information Resilience in a Complex System of National Security". Expected publication in October 2024. Palgrave Macmillan.
+Johanson, Jan-Erik, Alisa Puustinen & Oliver Saal. 2024. *Ignorance is Bliss? Network Analysis Shaping our Understanding of Security Risk Perceptions*. In Petri Uusikylä, Harri Jalonen & Annukka Jokipii (eds.). "Information Resilience and Comprehensive Security: Challenges and Complexities in Wicked Environments". Expected publication 3 November 2024. Palgrave Macmillan. Link: <https://link.springer.com/book/9783031661952>.
 
 ### Reports
 
@@ -32,15 +36,17 @@ Saal, Oliver. 2018. *Interaction between Online and Offline Worlds. Gender and E
 
 ### Unpublished Manuscripts
 
+Saal, Oliver, Iida Silfverhuth & Konsta Huovinen. n.d. *Pelastajien ja ensihoitajien kokema epäasiallinen ja väkivaltainen kohtelu - systemaattiseen kirjallisuuskatsaukseen pohjautuva käsiteanalyysi ja esiintyvyyden meta-analyysi. \[Inappropriate and Violent Behaviour in the Rescue and Emergency Services: A Conceptual Analysis and Meta-Analysis of Prevalence Based on a Systematic Literature Review\].* Submitted for peer review in *Työelämän tutkimus*. \[Article manuscript.\]
+
 Saal, Oliver & Alisa Puustinen. n.d. [*Measuring Subjective Risk Perception as a Latent Construct: A Semi-Confirmatory Factor Analytic Approach*](https://osaal.github.io/resources/saalpuustinen2023.html). \[Article manuscript.\] Supplementary files available at: <https://osf.io/cs97b/>. Pre-print version available soon on OSF, currently behind the title link. Currently reworking for submission.
 
 Helander, Mika & Oliver Saal. n.d. *Evaluating the Effects of Globalisation on Work: A Phenomenological Model of Abstract Evaluations Based on Awareness, Learning, and Knowledge*. \[Article manuscript.\]
 
 ## Conference Proceedings
 
-*Yksilön riskikäsitysten ja omatoimisen varautumisen kausaalisuhteen merkitys kokonaisturvallisuudelle \[The Relevance of the Causal Connection between an Individual's Risk Perception and Self-Preparedness for Total Security\]*. Sociology Days 2024, working group Sociology of Safety and National Defense. 21 March 2024. *Sosiologia*, upcoming.
+*Yksilön riskikäsitysten ja omatoimisen varautumisen kausaalisuhteen merkitys kokonaisturvallisuudelle \[The Relevance of the Causal Connection between an Individual's Risk Perception and Self-Preparedness for Total Security\]*. Sociology Days 2024, working group Sociology of Safety and National Defense. 21 March 2024. *Sosiologia* *61*(2), 171.
 
-*Pelastusalalla ja ensihoidossa esiintyvä syrjintä ja häirintä oikeuksien toteutumisen näkökulmasta* \[*Discrimination and harassment in the rescue services and out-of-hospital emergency health care from the perspective of the fulfilling of rights\]*. With Iida Silfverhuth and Konsta Huovinen. Sociology Days 2024, working group Fulfilling of Rights in the Welfare State. 21 March 2024. *Sosiologia*, upcoming.
+*Pelastusalalla ja ensihoidossa esiintyvä syrjintä ja häirintä oikeuksien toteutumisen näkökulmasta* \[*Discrimination and harassment in the rescue services and out-of-hospital emergency health care from the perspective of the fulfilling of rights\]*. With Iida Silfverhuth and Konsta Huovinen. Sociology Days 2024, working group Fulfilling of Rights in the Welfare State. 21 March 2024. *Sosiologia 61*(2), 157.
 
 *Yhdessä eteenpäin...? Työryhmäkeskustelu turvallisuustutkimuksen yhteistyön organisointimahdollisuuksista* \[*Forward together...? Working Group Discussion on the Organisational Possibilities of Collaboration in Safety and Security Research*\]. With Alisa Puustinen. Conference on Administrative and Local Government Studies 2023, working group Safety and Security Studies. 17 November 2023. Unpublished.
 
@@ -72,6 +78,8 @@ Working group *Safety and Security Studies* at the Conference on Administrative 
 Saal, Oliver & Puustinen, Alisa. 2023. *Suomalaiset ovat tyytyväisiä pelastustoimintaan - mutta osaavatko he itse toimia vaaratilanteissa?* \[*Finns are satisfied with emergency services - but do they know how to act in risky situations?*\]. *Palopäällystö* 2/2023: 29. Available: <https://issuu.com/palopaallysto/docs/palopaallysto-lehti-2_2023>.
 
 ### Blog Posts
+
+Saal, Oliver; Iida Silfverhuth & Konsta Huovinen. 2024. *Kesäisiä terveisiä Nollatoleranssi-hankkeesta!* \[*Summer greetings from the Zero Tolerance project!*\]. *Pelastusopiston blogi* 25.6.2024. Available: <https://www.pelastusopisto.fi/blogi/kesaisia-terveisia-nollatoleranssi-hankkeesta/>.
 
 Saal, Oliver. 2024. *Pelastusalalla epäasiallista käytöstä tulee alan sisältä ja sen ulkopuolelta* \[*The Emergency Services Meets Inappropriate Behaviour from Within and Without*\]. *SPAL:in Turvallisuuden tekijät -blogi*, 22.2.2024. Available: <https://www.spal.fi/blogs/pelastusalalla-epaasiallista-kaytosta-tulee-alan-sisalta-ja-sen-ulkopuolelta/>
 
