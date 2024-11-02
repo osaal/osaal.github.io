@@ -2,12 +2,12 @@
 title: "Home"
 ---
 ::: {.column-margin}
-![This is me in 2018! I actually wear glasses.](images/profile2018.jpg)
+![(c) Pelastusopisto, Santtu Tuomisto](images/profile2023.jpg)
 :::
-Welcome to my homepage! I am Oliver, a sociologist and graduate researcher at Åbo Akademi University in Turku, Finland.
+Welcome to my homepage! I am Oliver, a sociologist-cum-psychologist and graduate researcher at Åbo Akademi University in Turku, Finland.
 
 Navigate the pages through the top bar and the page-specific sidebars. A search function is available in the top-right corner.
 
 This webpage is built using **Quarto**, with the **flatly** Bootswatch theme. It is hosted on **GitHub Pages**.
 
-Contact me via the links in the top right-hand corner!
+Contact me via the links in the top right-hand corner.

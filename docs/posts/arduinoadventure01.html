@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2023-06-28">
 <meta name="description" content="This spring, my partner and I received an allotment garden. Being techy, lazy, and complete integrated tech beginners, we decided to make our own wireless moisture sensor to know when we have to water. This is a blog about that journey!">
 
-<title>Oliver Saal - Building a Wireless Moisture Sensor with Arduino - Part I</title>
+<title>Building a Wireless Moisture Sensor with Arduino - Part I – Oliver Saal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,7 +25,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -36,7 +36,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -84,7 +84,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -93,6 +99,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -110,6 +117,8 @@ cookieconsent.run({
   "notice_banner_reject_button_hide":false,
   "preferences_center_close_button_hide":false,
   "website_name":""
+  ,
+"language":"en"
   });
 });
 </script> 
@@ -123,60 +132,60 @@ cookieconsent.run({
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Oliver Saal</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">Me</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../research.html" rel="" target="">
- <span class="menu-text">Research</span></a>
+    <a class="nav-link" href="../research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../teaching.html" rel="" target="">
- <span class="menu-text">Teaching</span></a>
+    <a class="nav-link" href="../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources.html" rel="" target="">
- <span class="menu-text">Resources</span></a>
+    <a class="nav-link" href="../resources.html"> 
+<span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog.html" rel="" target="">
- <span class="menu-text">Thinking Out Loud</span></a>
+    <a class="nav-link" href="../blog.html"> 
+<span class="menu-text">Thinking Out Loud</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/ollisaal" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/ollisaal"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/osaal" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/osaal"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:oliver.saal@proton.me" rel="" target=""><i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:oliver.saal@proton.me"> <i class="bi bi-envelope" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -239,14 +248,16 @@ cookieconsent.run({
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">August 29, 2024</p>
+      <p class="date-modified">September 15, 2024</p>
     </div>
   </div>
     
   </div>
   
 
+
 </header>
+
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
@@ -280,8 +291,8 @@ cookieconsent.run({
 <p>The <a href="https://wiki.seeedstudio.com/Grove-Moisture_Sensor/">moisture sensors</a> are small two-pronged forks with a four-pin cable attaching to the back of the sensor. The sensor runs a current through the prongs, measures the voltage and returns it through the chosen pin. Using the connector shield, we can hook the whole thing up to the analog pins (since it is only a simple analog current that is being read), in our current case, analog pin 0.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\images/aa01_testingsetup.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">My current testing setup. The boards in the stack from top down: Grove connector shield, data logging shield, Arduino board. Analog pin 0 is connected through the Grove shield to the moisture sensor, which is sitting in a small potted plant.</figcaption>
+<p><img src="../images/aa01_testingsetup.jpg" class="img-fluid figure-img"></p>
+<figcaption>My current testing setup. The boards in the stack from top down: Grove connector shield, data logging shield, Arduino board. Analog pin 0 is connected through the Grove shield to the moisture sensor, which is sitting in a small potted plant.</figcaption>
 </figure>
 </div>
 <p>This, essentially, takes care of step one! Of course, on its own, this does nothing - the Arduino must be told what to do with the data that comes in.</p>
@@ -290,52 +301,54 @@ cookieconsent.run({
 <h1>Reading from the Moisture Sensor</h1>
 <p>As mentioned, the Arduino is programmed in a language called C++ (with some extra Arduino flavour, I’ve understood). This language is pretty human-readable, though admittedly much more complex than my current working language, R. In a first, very preliminary testing setup, I managed to omit three or four semi-colons, breaking the code instantly…</p>
 <p>Thus far, I’ve written a Sketch (the Arduino name for code scripts that are executed on the board) that takes an average of readings with a specific interval and over a defined number of readings, and prints it to the serial console (more on that later). This is the full script, in all its messy gloriness:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {{cpp}} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>// Setup Grove moisture pin</span>
-<span id="cb1-2"><a href="#cb1-2"></a>int sensorPin = A0;</span>
-<span id="cb1-3"><a href="#cb1-3"></a>int sensorValue = 0;</span>
-<span id="cb1-4"><a href="#cb1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5"></a>// Setup average reading</span>
-<span id="cb1-6"><a href="#cb1-6"></a>const int numReadings = 15;   // Number of readings done before reporting</span>
-<span id="cb1-7"><a href="#cb1-7"></a>const int delayTime = 1000;   // Time between readings in ms</span>
-<span id="cb1-8"><a href="#cb1-8"></a>int readings[numReadings];    // Array for storing readings, size of numReadings</span>
-<span id="cb1-9"><a href="#cb1-9"></a>int readIndex = 0;            // Index for storing readings and iteration</span>
-<span id="cb1-10"><a href="#cb1-10"></a>int total = 0;                // Storing total value for calculation</span>
-<span id="cb1-11"><a href="#cb1-11"></a>int average = 0;              // Storing average value for reporting</span>
-<span id="cb1-12"><a href="#cb1-12"></a></span>
-<span id="cb1-13"><a href="#cb1-13"></a>void setup() {</span>
-<span id="cb1-14"><a href="#cb1-14"></a>  // put your setup code here, to run once:</span>
-<span id="cb1-15"><a href="#cb1-15"></a>  Serial.begin(9600);</span>
-<span id="cb1-16"><a href="#cb1-16"></a>  // Intialize the reading array</span>
-<span id="cb1-17"><a href="#cb1-17"></a>  for (int thisReading = 0; thisReading &lt; numReadings; thisReading++) {</span>
-<span id="cb1-18"><a href="#cb1-18"></a>    readings[thisReading] = 0;</span>
-<span id="cb1-19"><a href="#cb1-19"></a>  }</span>
-<span id="cb1-20"><a href="#cb1-20"></a>}</span>
-<span id="cb1-21"><a href="#cb1-21"></a></span>
-<span id="cb1-22"><a href="#cb1-22"></a>void loop() {</span>
-<span id="cb1-23"><a href="#cb1-23"></a>  total = 0;</span>
-<span id="cb1-24"><a href="#cb1-24"></a>  // Iterate over numReadings and write reading to array, average out and print to serial.</span>
-<span id="cb1-25"><a href="#cb1-25"></a>  for (readIndex; readIndex &lt;= numReadings; readIndex++) {</span>
-<span id="cb1-26"><a href="#cb1-26"></a>    // Print final value and reset loop.</span>
-<span id="cb1-27"><a href="#cb1-27"></a>    if (readIndex == numReadings) {</span>
-<span id="cb1-28"><a href="#cb1-28"></a>        // Calculate value</span>
-<span id="cb1-29"><a href="#cb1-29"></a>        average = total / numReadings;</span>
-<span id="cb1-30"><a href="#cb1-30"></a>        Serial.print("Moisture average = ");</span>
-<span id="cb1-31"><a href="#cb1-31"></a>        Serial.println(average);</span>
-<span id="cb1-32"><a href="#cb1-32"></a>        // Reset the reading array</span>
-<span id="cb1-33"><a href="#cb1-33"></a>        for (int thisReading = 0; thisReading &lt; numReadings; thisReading++) {</span>
-<span id="cb1-34"><a href="#cb1-34"></a>          readings[thisReading] = 0;</span>
-<span id="cb1-35"><a href="#cb1-35"></a>        }</span>
-<span id="cb1-36"><a href="#cb1-36"></a>      // Reset the index and start over</span>
-<span id="cb1-37"><a href="#cb1-37"></a>      readIndex = 0;</span>
-<span id="cb1-38"><a href="#cb1-38"></a>      break;</span>
-<span id="cb1-39"><a href="#cb1-39"></a>    } else {</span>
-<span id="cb1-40"><a href="#cb1-40"></a>      // If not </span>
-<span id="cb1-41"><a href="#cb1-41"></a>      readings[readIndex] = analogRead(sensorPin);</span>
-<span id="cb1-42"><a href="#cb1-42"></a>      total += readings[readIndex];</span>
-<span id="cb1-43"><a href="#cb1-43"></a>    }</span>
-<span id="cb1-44"><a href="#cb1-44"></a>  delay(delayTime);</span>
-<span id="cb1-45"><a href="#cb1-45"></a>  }</span>
-<span id="cb1-46"><a href="#cb1-46"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="in">```{cpp}</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="in">// Setup Grove moisture pin</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="in">int sensorPin = A0;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="in">int sensorValue = 0;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="in">// Setup average reading</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="in">const int numReadings = 15;   // Number of readings done before reporting</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="in">const int delayTime = 1000;   // Time between readings in ms</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="in">int readings[numReadings];    // Array for storing readings, size of numReadings</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="in">int readIndex = 0;            // Index for storing readings and iteration</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="in">int total = 0;                // Storing total value for calculation</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="in">int average = 0;              // Storing average value for reporting</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="in">void setup() {</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="in">  // put your setup code here, to run once:</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="in">  Serial.begin(9600);</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="in">  // Intialize the reading array</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="in">  for (int thisReading = 0; thisReading &lt; numReadings; thisReading++) {</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="in">    readings[thisReading] = 0;</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="in">  }</span></span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="in">}</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a></span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="in">void loop() {</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="in">  total = 0;</span></span>
+<span id="cb1-25"><a href="#cb1-25"></a><span class="in">  // Iterate over numReadings and write reading to array, average out and print to serial.</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a><span class="in">  for (readIndex; readIndex &lt;= numReadings; readIndex++) {</span></span>
+<span id="cb1-27"><a href="#cb1-27"></a><span class="in">    // Print final value and reset loop.</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a><span class="in">    if (readIndex == numReadings) {</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a><span class="in">        // Calculate value</span></span>
+<span id="cb1-30"><a href="#cb1-30"></a><span class="in">        average = total / numReadings;</span></span>
+<span id="cb1-31"><a href="#cb1-31"></a><span class="in">        Serial.print("Moisture average = ");</span></span>
+<span id="cb1-32"><a href="#cb1-32"></a><span class="in">        Serial.println(average);</span></span>
+<span id="cb1-33"><a href="#cb1-33"></a><span class="in">        // Reset the reading array</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a><span class="in">        for (int thisReading = 0; thisReading &lt; numReadings; thisReading++) {</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a><span class="in">          readings[thisReading] = 0;</span></span>
+<span id="cb1-36"><a href="#cb1-36"></a><span class="in">        }</span></span>
+<span id="cb1-37"><a href="#cb1-37"></a><span class="in">      // Reset the index and start over</span></span>
+<span id="cb1-38"><a href="#cb1-38"></a><span class="in">      readIndex = 0;</span></span>
+<span id="cb1-39"><a href="#cb1-39"></a><span class="in">      break;</span></span>
+<span id="cb1-40"><a href="#cb1-40"></a><span class="in">    } else {</span></span>
+<span id="cb1-41"><a href="#cb1-41"></a><span class="in">      // If not </span></span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="in">      readings[readIndex] = analogRead(sensorPin);</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a><span class="in">      total += readings[readIndex];</span></span>
+<span id="cb1-44"><a href="#cb1-44"></a><span class="in">    }</span></span>
+<span id="cb1-45"><a href="#cb1-45"></a><span class="in">  delay(delayTime);</span></span>
+<span id="cb1-46"><a href="#cb1-46"></a><span class="in">  }</span></span>
+<span id="cb1-47"><a href="#cb1-47"></a><span class="in">}</span></span>
+<span id="cb1-48"><a href="#cb1-48"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Arduino code is written in three main areas, from top to bottom:</p>
 <ol type="1">
 <li>Libraries and variable declaration.</li>
@@ -343,56 +356,62 @@ cookieconsent.run({
 <li>The loop() function.</li>
 </ol>
 <p>Area one defines which libraries are being used (if any), as well as declares all variables into memory. This is something that is not done in R, but I remember it faintly from my Java adventures some years back. Essentially, I tell the computer “Hey! I want to use a number called <em>number</em> later on, please reserve space for it in the memory!” which the computer then does. This is that area in the above script:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource {{cpp}} number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>// Setup Grove moisture pin</span>
-<span id="cb2-2"><a href="#cb2-2"></a>int sensorPin = A0;</span>
-<span id="cb2-3"><a href="#cb2-3"></a>int sensorValue = 0;</span>
-<span id="cb2-4"><a href="#cb2-4"></a></span>
-<span id="cb2-5"><a href="#cb2-5"></a>// Setup average reading</span>
-<span id="cb2-6"><a href="#cb2-6"></a>const int numReadings = 15;   // Number of readings done before reporting</span>
-<span id="cb2-7"><a href="#cb2-7"></a>const int delayTime = 1000;   // Time between readings in ms</span>
-<span id="cb2-8"><a href="#cb2-8"></a>int readings[numReadings];    // Array for storing readings, size of numReadings</span>
-<span id="cb2-9"><a href="#cb2-9"></a>int readIndex = 0;            // Index for storing readings and iteration</span>
-<span id="cb2-10"><a href="#cb2-10"></a>int total = 0;                // Storing total value for calculation</span>
-<span id="cb2-11"><a href="#cb2-11"></a>int average = 0;              // Storing average value for reporting</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="in">```{cpp}</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="in">// Setup Grove moisture pin</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="in">int sensorPin = A0;</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="in">int sensorValue = 0;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="in">// Setup average reading</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="in">const int numReadings = 15;   // Number of readings done before reporting</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="in">const int delayTime = 1000;   // Time between readings in ms</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="in">int readings[numReadings];    // Array for storing readings, size of numReadings</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="in">int readIndex = 0;            // Index for storing readings and iteration</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="in">int total = 0;                // Storing total value for calculation</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="in">int average = 0;              // Storing average value for reporting</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Here, I define which sensor pin will be read and create a variable for its value. I also seet up a number of variables to help me work the data, the most important ones being <code>numReadings</code> and <code>readings[numReadings]</code>. The former defines how many readings will be done (fifteen in this example), and the latter is an array storing the data read from each reading. The array is defined as an integer (number) array of size <code>numReadings</code>, so that it can fit all the necessary sensor readings. Another important variable is <code>delayTime</code>, which defines, in milliseconds, how long to wait between each reading.</p>
 <p>Combining these three currently, the script is set up to take a reading every second fifteen times (i.e., over fifteen seconds).</p>
 <p>The second area is the setup() function. This area is ran only once, when the script is executed or started. This can be when the Arduino receives power, or when I upload a new Sketch to the device.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource {{cpp}} number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>void setup() {</span>
-<span id="cb3-2"><a href="#cb3-2"></a>  // put your setup code here, to run once:</span>
-<span id="cb3-3"><a href="#cb3-3"></a>  Serial.begin(9600);</span>
-<span id="cb3-4"><a href="#cb3-4"></a>  // Intialize the reading array</span>
-<span id="cb3-5"><a href="#cb3-5"></a>  for (int thisReading = 0; thisReading &lt; numReadings; thisReading++) {</span>
-<span id="cb3-6"><a href="#cb3-6"></a>    readings[thisReading] = 0;</span>
-<span id="cb3-7"><a href="#cb3-7"></a>  }</span>
-<span id="cb3-8"><a href="#cb3-8"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1"></a><span class="in">```{cpp}</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="in">void setup() {</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="in">  // put your setup code here, to run once:</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="in">  Serial.begin(9600);</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="in">  // Intialize the reading array</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="in">  for (int thisReading = 0; thisReading &lt; numReadings; thisReading++) {</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="in">    readings[thisReading] = 0;</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="in">  }</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="in">}</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Here, I first tell the Arduino to begin transmitting stuff over the serial connection, i.e., the USB cable. This ensures that I can actually read what is going on in the device - otherwise everything is stuck inside it, with no direct way to access it (unless I <em>make</em> a way…).</p>
 <p>After that, I initialize the results array with a bunch of zeroes. This simply fills up the fifteen-slot <code>readings</code> array with zeroes - once again, things R abstracts and does away with.</p>
 <p>The real meat is in the third area, the loop() function. This is ran over and over again (hence, “loop”) for as long as the device runs, or until I somehow tell it to stop. Anything that should be repeated multiple times should go in here - like our moisture tracking!</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource {{cpp}} number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href="#cb4-1"></a>void loop() {</span>
-<span id="cb4-2"><a href="#cb4-2"></a>  total = 0;</span>
-<span id="cb4-3"><a href="#cb4-3"></a>  // Iterate over numReadings and write reading to array, average out and print to serial.</span>
-<span id="cb4-4"><a href="#cb4-4"></a>  for (readIndex; readIndex &lt;= numReadings; readIndex++) {</span>
-<span id="cb4-5"><a href="#cb4-5"></a>    // Print final value and reset loop.</span>
-<span id="cb4-6"><a href="#cb4-6"></a>    if (readIndex == numReadings) {</span>
-<span id="cb4-7"><a href="#cb4-7"></a>        // Calculate value</span>
-<span id="cb4-8"><a href="#cb4-8"></a>        average = total / numReadings;</span>
-<span id="cb4-9"><a href="#cb4-9"></a>        Serial.print("Moisture average = ");</span>
-<span id="cb4-10"><a href="#cb4-10"></a>        Serial.println(average);</span>
-<span id="cb4-11"><a href="#cb4-11"></a>        // Reset the reading array</span>
-<span id="cb4-12"><a href="#cb4-12"></a>        for (int thisReading = 0; thisReading &lt; numReadings; thisReading++) {</span>
-<span id="cb4-13"><a href="#cb4-13"></a>          readings[thisReading] = 0;</span>
-<span id="cb4-14"><a href="#cb4-14"></a>        }</span>
-<span id="cb4-15"><a href="#cb4-15"></a>      // Reset the index and start over</span>
-<span id="cb4-16"><a href="#cb4-16"></a>      readIndex = 0;</span>
-<span id="cb4-17"><a href="#cb4-17"></a>      break;</span>
-<span id="cb4-18"><a href="#cb4-18"></a>    } else {</span>
-<span id="cb4-19"><a href="#cb4-19"></a>      // If not </span>
-<span id="cb4-20"><a href="#cb4-20"></a>      readings[readIndex] = analogRead(sensorPin);</span>
-<span id="cb4-21"><a href="#cb4-21"></a>      total += readings[readIndex];</span>
-<span id="cb4-22"><a href="#cb4-22"></a>    }</span>
-<span id="cb4-23"><a href="#cb4-23"></a>  delay(delayTime);</span>
-<span id="cb4-24"><a href="#cb4-24"></a>  }</span>
-<span id="cb4-25"><a href="#cb4-25"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="in">```{cpp}</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="in">void loop() {</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="in">  total = 0;</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="in">  // Iterate over numReadings and write reading to array, average out and print to serial.</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="in">  for (readIndex; readIndex &lt;= numReadings; readIndex++) {</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="in">    // Print final value and reset loop.</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="in">    if (readIndex == numReadings) {</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="in">        // Calculate value</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="in">        average = total / numReadings;</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="in">        Serial.print("Moisture average = ");</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="in">        Serial.println(average);</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="in">        // Reset the reading array</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="in">        for (int thisReading = 0; thisReading &lt; numReadings; thisReading++) {</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a><span class="in">          readings[thisReading] = 0;</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a><span class="in">        }</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a><span class="in">      // Reset the index and start over</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a><span class="in">      readIndex = 0;</span></span>
+<span id="cb4-18"><a href="#cb4-18"></a><span class="in">      break;</span></span>
+<span id="cb4-19"><a href="#cb4-19"></a><span class="in">    } else {</span></span>
+<span id="cb4-20"><a href="#cb4-20"></a><span class="in">      // If not </span></span>
+<span id="cb4-21"><a href="#cb4-21"></a><span class="in">      readings[readIndex] = analogRead(sensorPin);</span></span>
+<span id="cb4-22"><a href="#cb4-22"></a><span class="in">      total += readings[readIndex];</span></span>
+<span id="cb4-23"><a href="#cb4-23"></a><span class="in">    }</span></span>
+<span id="cb4-24"><a href="#cb4-24"></a><span class="in">  delay(delayTime);</span></span>
+<span id="cb4-25"><a href="#cb4-25"></a><span class="in">  }</span></span>
+<span id="cb4-26"><a href="#cb4-26"></a><span class="in">}</span></span>
+<span id="cb4-27"><a href="#cb4-27"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The code contains a few nested things, i.e., things inside of things. The main stuff happens inside the <code>for</code> loop. This loop starts from the value of <code>readIndex</code>, which in the start is zero, and runs repeatedly, every time incrementing <code>readIndex</code>by one. Finally, when the index becomes equal to the number of readings I want to do, we stop. Essentially, thus, it represents every reading that I want to do.</p>
 <p>Inside this loop exists an <code>if-else</code> statement. The first part, under <code>if</code>, is executed if the index is equal to the number of readings, and represents the case of “We’re done now, time to wrap up and leave.” The second part, under <code>else</code>, is executed in all other cases - meaning every reading we do.</p>
 <p>Starting with the <code>else</code> section (since it, paradoxically, is the main stuff we’re doing here), I take a reading from the moisture sensor using <code>analogRead(sensorPin)</code> and store it in its place in <code>readings</code>. I then add it to a total, and we’re done! Before the for loop exists, I delay execution for the amount of time I defined in-between readings, so that we don’t read a million-billion times a second.</p>
@@ -401,8 +420,8 @@ cookieconsent.run({
 <p>The product of this whole code snippet is some average moisture levels, as measured in voltage. Since the text is not very cool to look at, I used the Serial Plotter function inside the Arduino IDE to produce a cute little plot of the values coming in:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\images/aa01_moisturesensorgraph.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Graph of moisture values. X-axis indicates time (technically, the running order of the measurements), and the Y-axis indicates measurement in voltage (with some modification).</figcaption>
+<p><img src="../images/aa01_moisturesensorgraph.png" class="img-fluid figure-img"></p>
+<figcaption>Graph of moisture values. X-axis indicates time (technically, the running order of the measurements), and the Y-axis indicates measurement in voltage (with some modification).</figcaption>
 </figure>
 </div>
 <p>In this particular interval, the moisture level was going up. Since the plant had been sitting out in the heat the whole day, I presume this was some sort of “getting used to”-situation. Alternatively, it could be water precipitating out of the soil - I genuinely have no idea, I’m a social scientist!</p>
@@ -417,7 +436,7 @@ cookieconsent.run({
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{saal2023,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{saal2023,
   author = {Saal, Oliver},
   title = {Building a {Wireless} {Moisture} {Sensor} with {Arduino} -
     {Part} {I}},
@@ -464,18 +483,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -507,11 +515,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -521,8 +568,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -534,7 +590,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -578,6 +757,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -603,6 +783,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -668,12 +874,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 

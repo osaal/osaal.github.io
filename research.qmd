@@ -6,7 +6,7 @@ These pages contain my research, with publication links and other contents as av
 
 Please reference the original sources, not this website.
 
-*Updated 29 August 2024*
+*Updated 2 November 2024*
 
 ## Current Research Projects
 
@@ -16,11 +16,13 @@ Please reference the original sources, not this website.
 
 ### Peer-Reviewed Articles
 
-Saal, Oliver, Iida Silfverhuth & Konsta Huovinen. 2024. *Epäasiallisen ja väkivaltaisen kohtelun suomen- ja ruotsinkielisen mittarin validointi pelastus- ja ensihoitoalalla*. \[*Validation of Finnish and Swedish Language Instrument on Inappropriate and Violent Behaviour in the Rescue and Emergency Services*\]. Registered report. Stage 1 evaluation complete. To be archived in the University of Jyväskylä archive.
+Helander, Mika & Saal, Oliver. 2025. *Evaluating the Effects of Globalization on Work: Building upon Awareness, Learning, and Knowledge*. *Nordic Journal of Working Life Studies* 2025(3). OnlineFirst version forthcoming.
+
+Saal, Oliver, Iida Silfverhuth & Konsta Huovinen. 2024. *Epäasiallisen ja väkivaltaisen kohtelun suomen- ja ruotsinkielisen mittarin validointi pelastus- ja ensihoitoalalla*. \[*Validation of Finnish and Swedish Language Instrument on Inappropriate and Violent Behaviour in the Rescue and Emergency Services*\]. Registered report. Stage 1 evaluation complete. Temporarily available: <https://www.jyu.fi/fi/tutkimus/julkaiseminen-jyvaskylan-yliopistossa/rekisteroidyt-tutkimusraportit-valmistuneet-arviot>.
 
 ### Chapters in Edited Volumes
 
-Johanson, Jan-Erik, Alisa Puustinen & Oliver Saal. 2024. *Ignorance is Bliss? Network Analysis Shaping our Understanding of Security Risk Perceptions*. In Petri Uusikylä, Harri Jalonen & Annukka Jokipii (eds.). "Information Resilience and Comprehensive Security: Challenges and Complexities in Wicked Environments". Expected publication 3 November 2024. Palgrave Macmillan. Link: <https://link.springer.com/book/9783031661952>.
+Johanson, Jan-Erik, Alisa Puustinen & Oliver Saal. 2024. *Ignorance is Bliss? Network Analysis Shaping our Understanding of Security Risk Perceptions*. In Petri Uusikylä, Harri Jalonen & Annukka Jokipii (eds.). "Information Resilience and Comprehensive Security: Challenges and Complexities in Wicked Environments". Expected publication 25 December 2024. Palgrave Macmillan. Link: <https://link.springer.com/book/9783031661952>.
 
 ### Reports
 
@@ -37,10 +39,6 @@ Saal, Oliver. 2018. *Interaction between Online and Offline Worlds. Gender and E
 ### Unpublished Manuscripts
 
 Saal, Oliver, Iida Silfverhuth & Konsta Huovinen. n.d. *Pelastajien ja ensihoitajien kokema epäasiallinen ja väkivaltainen kohtelu - systemaattiseen kirjallisuuskatsaukseen pohjautuva käsiteanalyysi ja esiintyvyyden meta-analyysi. \[Inappropriate and Violent Behaviour in the Rescue and Emergency Services: A Conceptual Analysis and Meta-Analysis of Prevalence Based on a Systematic Literature Review\].* Submitted for peer review in *Työelämän tutkimus*. \[Article manuscript.\]
-
-Saal, Oliver & Alisa Puustinen. n.d. [*Measuring Subjective Risk Perception as a Latent Construct: A Semi-Confirmatory Factor Analytic Approach*](https://osaal.github.io/resources/saalpuustinen2023.html). \[Article manuscript.\] Supplementary files available at: <https://osf.io/cs97b/>. Pre-print version available soon on OSF, currently behind the title link. Currently reworking for submission.
-
-Helander, Mika & Oliver Saal. n.d. *Evaluating the Effects of Globalisation on Work: A Phenomenological Model of Abstract Evaluations Based on Awareness, Learning, and Knowledge*. \[Article manuscript.\]
 
 ## Conference Proceedings
 
@@ -78,6 +76,8 @@ Working group *Safety and Security Studies* at the Conference on Administrative 
 Saal, Oliver & Puustinen, Alisa. 2023. *Suomalaiset ovat tyytyväisiä pelastustoimintaan - mutta osaavatko he itse toimia vaaratilanteissa?* \[*Finns are satisfied with emergency services - but do they know how to act in risky situations?*\]. *Palopäällystö* 2/2023: 29. Available: <https://issuu.com/palopaallysto/docs/palopaallysto-lehti-2_2023>.
 
 ### Blog Posts
+
+Saal, Oliver. 2024. *Epäasiallisuutta ja väkivaltaa esiintyy pelastusalalla ja ensihoidossa laajasti*. \[*Inappropriate and Violent Behaviour is Commonplace in Firefighting and Emergency Medicine*\]. *Pelastusopiston blogi*, 16.10.2024. Available: <https://www.pelastusopisto.fi/blogi/epaasiallisuutta-ja-vakivaltaa-esiintyy-pelastusalalla-ja-ensihoidossa-laajasti/>.
 
 Saal, Oliver; Iida Silfverhuth & Konsta Huovinen. 2024. *Kesäisiä terveisiä Nollatoleranssi-hankkeesta!* \[*Summer greetings from the Zero Tolerance project!*\]. *Pelastusopiston blogi* 25.6.2024. Available: <https://www.pelastusopisto.fi/blogi/kesaisia-terveisia-nollatoleranssi-hankkeesta/>.
 

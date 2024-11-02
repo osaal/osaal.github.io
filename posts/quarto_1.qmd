@@ -1,0 +1,51 @@
+---
+title: "Quarton käyttöohje - Osa 1"
+description: "Lyhyessä blogisarjassa kuvailen Quarton käyttöönoton ja peruskäytön suomeksi. Ensimmäisessä osassa käyn läpi Quarton käyttötarkoitukset, asentamisen ja ensimmäisen artikkelin kirjoittamisen ja renderöinnin."
+author: "Oliver Saal"
+date: today
+date-modified: last-modified
+draft: true
+categories:
+  - quarto
+  - finnish
+  - tieteellinen kirjoittaminen
+---
+
+# OUTLINE
+
+## Mikä on Quarto?
+
+-   Mikä on Quarto?
+    -   Quarto on tieteelliseen ja tekniseen kirjoittamiseen tarkoitettu työkalu
+-   Mihin Quartoa voi käyttää?
+    -   Quartoa voi käyttää artikkeleiden, kirjojen, verkkosivujen, blogien ja data dashboardien tekemiseen
+-   Miksi Quarto on parempi kuin perinteiset tekstinkäsittelyprosessit?
+    -   Quartossa voit kirjoittaa yhdessä muodossa ja julkaista useampaan muotoon
+    -   Quarto mahdollistaa toistettavien analyysien kirjoittamisen: Analyysikoodi sekoitetaan ja ajetaan suoraan tekstitiedostossa, jolloin analyysit ja niiden selosteet eivät enää elä eri tiedostoissa
+    -   Quarto on ilmainen ja avoimeen lähdekoodin pohjautuva, eli kuka tahansa voi jatkokehittää Quartoa tai lisätä siihen ominaisuuksia
+    -   Quarton käyttämiä tekstitiedostoja voi muokata käytännössä millä tahansa tekstinkäsittelyohjelmalla
+-   Mihin käyttöön Quarto ei sovellu varsin hyvin?
+    -   Vain perustekstin kirjoittaminen (ilman koodia ym. multimediaa) voi sinänsä kirjoittaa Quartolla, mutta yksinkertainen Word-tiedosto voi olla helpompi tähän tarpeeseen
+    -   Quarto on suunniteltu käytettäväksi varsinkin R- ja Python-ohjelmointikielien kanssa; koska nämä kielet sopivat parhaiten määrällisen datan käsittelyyn, laadulliset analyysit eivät saa yhtä paljon hyötyä tästä menettelystä (mutta niihinkin löytyy hyödyllisiä ohjelmointityökaluja!)
+    -   Quarton tuottamat verkkosivut ovat suhteellisen yksinkertaisia, joten hyvin erityisiä responsiivisia verkkosivuja työkalulla ei (helposti) voi tehdä -- tähän käyttöön oikeat verkkosivutyökalut kuten WordPpess tai Squarespace soveltuvat paremmin
+    -   Vaikka Quarton kautta tehdyt diaesitykset (esim. Powerpoint) ovat mahdollisia, Quarto kannustaa enemmän kirjoittamiseen kuin visualisointiin. Tämän takia on ehkä vähän liian helppoa tehdä "tekstiseinädioja", kun hyvä diaesitys sisältää niin vähän tekstiä kuin mahdollista.
+        -   Toisaalta Quarton kautta kaikki analyyseissa tehdyt kuviot voidaan upottaa suoraan dioihin, eli ei tarvitse erikseen tallennella ja liittää kuvioita tiedostojen välillä
+    -   Quarto vaatii jonkin verran teknistä työtä -- jos käyttäjä haluaa mahdollisimman yksinkertaisen prosessin, Quarto ei aina sovellu siihen. Kannustan kuitenkin oppimaan näitä taitoja, sillä ne avaavat täysin uuden maailman tieteelliseen kirjoittamiseen!
+
+## Quarto käyttöprosessi
+
+1.  Vedosta tekstiä ja koodianalyysia (esim. tilastollisia malleja, kuvioita) samanaikaisesti `qmd`-tiedostoon
+2.  Renderöi teksti Quarton kautta haluamaasi muotoon, esim. Word-tiedostoon, HTML-verkkosivuksi, PDF-tiedostoon tai Powerpoint-esitykseen
+
+## Tarvittavat ohjelmat
+
+1.  R-kieli
+2.  Git
+3.  RStudio + Quarto
+4.  (Valinnainen, vain Windows) RTools
+
+-   HUOM: Quarto tukee ohjelmointikieliä R, Python, ObjectiveJS ja Julia. Keskityn tässä R-kieleen, mutta koodikielen voi helposti vaihtaa ja useampaa kieltä voi myös sekoittaa samaan dokumenttiin.
+-   Jotta Quarto voi käyttää, ei oikeastaan tarvitse yhtään muuta kuin Quarton asennuksen ja jonkun tekstieditorin (vaikkapa Windowsin Muistio-ohjelman). Quarton käyttö tehdään kuitenkin tuolloin komentokehotteen kautta (engl. *terminal*), mikä voi olla aloittelijalle haasteellista. Helpoin tapa aloittaa on RStudion avulla, vaikka ei edes kirjoittaisi R-koodia, sillä RStudiossa tulee nykyään Quarto ja erinäiset helppokäyttötoiminnot mukana.
+-   Git-palvelua ei myöskään tarvitse käyttää, mutta suosittelen erittäin lämpimästi Gitin ja GitHubin käyttöönottoa osana kirjoitusprosessia. Näiden työkalujen avulla voi esimerkiksi yhteiskirjoittaa muiden henkilöiden kanssa, ilmaiseksi julkaista verkkosivuja sekä hallita tekstin eri versioita. Blogisarjan myöhemmässä osassa tulee kuvailu Gitin käyttöönotosta ja perustoiminnoista.
+
+## Ensimmäisen artikkelin kirjoittaminen

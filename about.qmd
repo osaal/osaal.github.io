@@ -4,7 +4,7 @@ text: "Curriculum Vitae"
 about:
   id: first-section
   template: trestles
-  image: images/profile2018.jpg
+  image: images/profile2023.jpg
   links:
     - icon: twitter
       text: Twitter
@@ -23,7 +23,7 @@ editor:
 ::: {#first-section}
 Oliver Saal is a sociologist of education, minorities, and security
 research. My academic interests include quantitative analysis,
-especially network and latent factor models, Higher Education studies,
+especially network and latent factor models, cognitive and behavioural science,
 and the sociology of risk perception. My free time is spent watching
 RuPaul's Drag Race, producing documentary films, and hobby programming.
 
@@ -45,7 +45,7 @@ Finland](https://pelastusopisto.fi/en/) <br/> Kuopio, Finland <br/>
 Full-time, civil servant <br/> 2022 - current
 
 **Doctoral Researcher** \| Åbo Akademi University <br/> Turku, Finland
-<br/> Full-time, grant-funded <br/> 2020 - current
+<br/> Full-time, grant-funded <br/> 2020 - 2024
 
 **Research Assistant**, [The Westermarck Society
 ry](https://www.facebook.com/westermarckseura/), Turku, Finland (2021)
