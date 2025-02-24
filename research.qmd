@@ -6,25 +6,30 @@ These pages contain my research, with publication links and other contents as av
 
 Please reference the original sources, not this website.
 
-*Updated 2 November 2024*
+*Updated 24 February 2025*
 
-## Current Research Projects
+## Current Research Project
+-   [Project on determining the financing structure of emergency services at the regional welfare counties](https://intermin.fi/) Specialist in research project at Finnish Ministry of the Interior. Financing by the Fire Safety Fund (Palosuojelurahasto).
 
--   *Emergency Services Zero Tolerance to Discrimination and Harassment - Fact or Fiction?* Project manager and principal investigator of research project at Pelastusopisto - Emergency Services Academy Finland. Financing by the Fire Safety Fund (Palosuojelurahasto).
+## Past Research Projects
+
+-   [*Emergency Services Zero Tolerance to Discrimination and Harassment - Fact or Fiction?*](https://pelastusopisto.fi/nollatoleranssi) Project manager and principal investigator of research project at Pelastusopisto - Emergency Services Academy Finland. Financing by the Fire Safety Fund (Palosuojelurahasto).
 
 ## Research Publications
 
 ### Peer-Reviewed Articles
 
-Helander, Mika & Saal, Oliver. 2025. *Evaluating the Effects of Globalization on Work: Building upon Awareness, Learning, and Knowledge*. *Nordic Journal of Working Life Studies* 2025(3). OnlineFirst version forthcoming.
+Helander, Mika & Saal, Oliver. 2025. *Evaluating the Effects of Globalization on Work: Building upon Awareness, Learning, and Knowledge*. *Nordic Journal of Working Life Studies* 2025(3). OnlineFirst. Link: <https://doi.org/10.18291/njwls.151853>.
 
-Saal, Oliver, Iida Silfverhuth & Konsta Huovinen. 2024. *Epäasiallisen ja väkivaltaisen kohtelun suomen- ja ruotsinkielisen mittarin validointi pelastus- ja ensihoitoalalla*. \[*Validation of Finnish and Swedish Language Instrument on Inappropriate and Violent Behaviour in the Rescue and Emergency Services*\]. Registered report. Stage 1 evaluation complete. Temporarily available: <https://www.jyu.fi/fi/tutkimus/julkaiseminen-jyvaskylan-yliopistossa/rekisteroidyt-tutkimusraportit-valmistuneet-arviot>.
+Saal, Oliver, Iida Silfverhuth & Konsta Huovinen. 2024. *Epäasiallisen ja väkivaltaisen kohtelun suomen- ja ruotsinkielisen mittarin validointi pelastus- ja ensihoitoalalla*. \[*Validation of Finnish and Swedish Language Instrument on Inappropriate and Violent Behaviour in the Rescue and Emergency Services*\]. Registered report. Stage 1 evaluation complete. State 2 under peer review. Temporarily available: <https://www.jyu.fi/fi/tutkimus/julkaiseminen-jyvaskylan-yliopistossa/rekisteroidyt-tutkimusraportit-valmistuneet-arviot>.
 
 ### Chapters in Edited Volumes
 
-Johanson, Jan-Erik, Alisa Puustinen & Oliver Saal. 2024. *Ignorance is Bliss? Network Analysis Shaping our Understanding of Security Risk Perceptions*. In Petri Uusikylä, Harri Jalonen & Annukka Jokipii (eds.). "Information Resilience and Comprehensive Security: Challenges and Complexities in Wicked Environments". Expected publication 25 December 2024. Palgrave Macmillan. Link: <https://link.springer.com/book/9783031661952>.
+Johanson, Jan-Erik, Alisa Puustinen & Oliver Saal. 2024. *Ignorance is Bliss? Network Analysis Shaping our Understanding of Security Risk Perceptions*. In Petri Uusikylä, Harri Jalonen & Annukka Jokipii (eds.). "Information Resilience and Comprehensive Security: Challenges and Complexities in Wicked Environments". Palgrave Macmillan. Link: <https://link.springer.com/book/9783031661952>.
 
 ### Reports
+
+Saal, Oliver, Iida Silfverhuth, Konsta Huovinen, Aino Harinen, Riikka Salmi, Janne Koivukoski & Mimmi Tolvanen. 2025. *Tulta ilman savua. Epäasiallinen ja väkivaltainen kohtelu pelastusalalla ja ensihoidossa*. \[*Fire without Smoke: Inappropriate and Violent Behaviour in the Rescue Services and Emergency Medical Care*. Research report.\] Kuopio: Pelastusopisto. Link: <http://info.smedu.fi/kirjasto/sarja_B/B6_2025.pdf>.
 
 Saal, Oliver & Alisa Puustinen. 2023. *Suomalaisten pelastusasenteet 2023*. \[*Finnish Emergency Services Attutides 2023*. Research report.\] Helsinki: Ministry of the Interior. Link: <http://urn.fi/URN:ISBN:978-952-324-944-8>.
 
@@ -41,6 +46,8 @@ Saal, Oliver. 2018. *Interaction between Online and Offline Worlds. Gender and E
 Saal, Oliver, Iida Silfverhuth & Konsta Huovinen. n.d. *Pelastajien ja ensihoitajien kokema epäasiallinen ja väkivaltainen kohtelu - systemaattiseen kirjallisuuskatsaukseen pohjautuva käsiteanalyysi ja esiintyvyyden meta-analyysi. \[Inappropriate and Violent Behaviour in the Rescue and Emergency Services: A Conceptual Analysis and Meta-Analysis of Prevalence Based on a Systematic Literature Review\].* Submitted for peer review in *Työelämän tutkimus*. \[Article manuscript.\]
 
 ## Conference Proceedings
+
+*Pelastusalan ja ensihoidon kohtaaman epäasiallisen kohtelun muodot ja puuttumiskeinot: Valtakunnallisen kyselytutkimuksen tuloksia \[The Forms and Interventions for Inappropriate Behaviour in the Emergency Services and First Aid: Results from a national survey study\]*. Work Research Days 2024, working group Problematic Interactions in Work Life. 7 November 2024. Unpublished.
 
 *Yksilön riskikäsitysten ja omatoimisen varautumisen kausaalisuhteen merkitys kokonaisturvallisuudelle \[The Relevance of the Causal Connection between an Individual's Risk Perception and Self-Preparedness for Total Security\]*. Sociology Days 2024, working group Sociology of Safety and National Defense. 21 March 2024. *Sosiologia* *61*(2), 171.
 
@@ -69,18 +76,30 @@ Working group *Safety and Security Studies* at the Conference on Administrative 
 -   **Kone Foundation** \| Personal working grant for doctoral thesis in Sociology. 3.5 years (full-time). Awarded in 2021.
 -   **Waldemar von Frenckell Foundation** \| Personal working grant for doctoral thesis in Sociology. 5 months (full-time). Awarded in 2021.
 
+## Community Service
+
+Peer reviewer for the [Yearbook of Emergency, Safety and Security Studies](https://www.pelastusopisto.fi/kirjasto-ja-tietopalvelut/julkaisut-ja-aineistot/pelastus-ja-turvallisuustutkimuksen-vuosikirja/), volume 2025.
+
 ## Non-Fiction Writing
 
 ### Articles
 
-Saal, Oliver & Puustinen, Alisa. 2023. *Suomalaiset ovat tyytyväisiä pelastustoimintaan - mutta osaavatko he itse toimia vaaratilanteissa?* \[*Finns are satisfied with emergency services - but do they know how to act in risky situations?*\]. *Palopäällystö* 2/2023: 29. Available: <https://issuu.com/palopaallysto/docs/palopaallysto-lehti-2_2023>.
+Saal, Oliver. 21.9.2024. *HSL-yhtymän perussopimus painottaa liikaa taloutta* \[*The Base Contract of the HSL Alliance Overemphasizes the Economy*\]. Helsingin Sanomat. Link: <https://www.hs.fi/mielipide/art-2000010707993.html>.
+
+Saal, Oliver & Puustinen, Alisa. 2023. *Suomalaiset ovat tyytyväisiä pelastustoimintaan - mutta osaavatko he itse toimia vaaratilanteissa?* \[*Finns are satisfied with emergency services - but do they know how to act in risky situations?*\]. *Palopäällystö* 2/2023: 29. Link: <https://issuu.com/palopaallysto/docs/palopaallysto-lehti-2_2023>.
 
 ### Blog Posts
 
-Saal, Oliver. 2024. *Epäasiallisuutta ja väkivaltaa esiintyy pelastusalalla ja ensihoidossa laajasti*. \[*Inappropriate and Violent Behaviour is Commonplace in Firefighting and Emergency Medicine*\]. *Pelastusopiston blogi*, 16.10.2024. Available: <https://www.pelastusopisto.fi/blogi/epaasiallisuutta-ja-vakivaltaa-esiintyy-pelastusalalla-ja-ensihoidossa-laajasti/>.
+Saal, Oliver. 2025. *Tasa-arvoon ja yhdenvertaisuuteen tähtäävät toimenpiteet purevat osittain*. \[*Interventions Aiming at Equality and Inclusion are Partially Effective*\]. *Pelastusopiston blogi*, 15.1.2024. Link: <https://www.pelastusopisto.fi/blogi/tasa-arvoon-ja-yhdenvertaisuuteen-tahtaavat-toimenpiteet-purevat-osittain/>.
 
-Saal, Oliver; Iida Silfverhuth & Konsta Huovinen. 2024. *Kesäisiä terveisiä Nollatoleranssi-hankkeesta!* \[*Summer greetings from the Zero Tolerance project!*\]. *Pelastusopiston blogi* 25.6.2024. Available: <https://www.pelastusopisto.fi/blogi/kesaisia-terveisia-nollatoleranssi-hankkeesta/>.
+Saal, Oliver. 2024. *Epäasiallisuuksia ja väkivaltaa ei raportoida, jos ilmoitusjärjestelmää ei ole olemassa*. \[*Inappropriate Behaviour and Violence is Not Reported if There is No Reporting System*\]. *Pelastusopiston blogi*, 18.12.2024. Link: <https://www.pelastusopisto.fi/blogi/epaasiallisuuksia-ja-vakivaltaa-ei-raportoida-jos-ilmoitusjarjestelmaa-ei-ole-olemassa/>.
 
-Saal, Oliver. 2024. *Pelastusalalla epäasiallista käytöstä tulee alan sisältä ja sen ulkopuolelta* \[*The Emergency Services Meets Inappropriate Behaviour from Within and Without*\]. *SPAL:in Turvallisuuden tekijät -blogi*, 22.2.2024. Available: <https://www.spal.fi/blogs/pelastusalalla-epaasiallista-kaytosta-tulee-alan-sisalta-ja-sen-ulkopuolelta/>
+Saal, Oliver. 2024. *Työyhteisön epäasiallisuudet ja väkivalta heikentävät alan pitovoimaa*. \[*Inappropriate Behaviour and Violence Weakens Workplace Retention*\]. *Pelastusopiston blogi*, 13.11.2024. Link: <https://www.pelastusopisto.fi/blogi/tyoyhteison-epaasiallisuudet-ja-vakivalta-heikentavat-alan-pitovoimaa/>.
 
-Saal, Oliver. 2024. *Avoin tiede pelastusalan arvostuksen kohottojana* \[*Open Science as a Positive Influence on the Respect of the Emergency Services*\]. *Pelastusopiston blogi* 5.2.2024. Available: <https://www.pelastusopisto.fi/blogi/avoin-tiede-pelastusalan-arvostuksen-kohottajana/>.
+Saal, Oliver. 2024. *Epäasiallisuutta ja väkivaltaa esiintyy pelastusalalla ja ensihoidossa laajasti*. \[*Inappropriate and Violent Behaviour is Commonplace in Firefighting and Emergency Medicine*\]. *Pelastusopiston blogi*, 16.10.2024. Link: <https://www.pelastusopisto.fi/blogi/epaasiallisuutta-ja-vakivaltaa-esiintyy-pelastusalalla-ja-ensihoidossa-laajasti/>.
+
+Saal, Oliver; Iida Silfverhuth & Konsta Huovinen. 2024. *Kesäisiä terveisiä Nollatoleranssi-hankkeesta!* \[*Summer greetings from the Zero Tolerance project!*\]. *Pelastusopiston blogi* 25.6.2024. Link: <https://www.pelastusopisto.fi/blogi/kesaisia-terveisia-nollatoleranssi-hankkeesta/>.
+
+Saal, Oliver. 2024. *Pelastusalalla epäasiallista käytöstä tulee alan sisältä ja sen ulkopuolelta* \[*The Emergency Services Meets Inappropriate Behaviour from Within and Without*\]. *SPAL:in Turvallisuuden tekijät -blogi*, 22.2.2024. Link: <https://www.spal.fi/blogs/pelastusalalla-epaasiallista-kaytosta-tulee-alan-sisalta-ja-sen-ulkopuolelta/>
+
+Saal, Oliver. 2024. *Avoin tiede pelastusalan arvostuksen kohottojana* \[*Open Science as a Positive Influence on the Respect of the Emergency Services*\]. *Pelastusopiston blogi* 5.2.2024. Link: <https://www.pelastusopisto.fi/blogi/avoin-tiede-pelastusalan-arvostuksen-kohottajana/>.

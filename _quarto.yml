@@ -23,8 +23,8 @@ website:
       - text: "Thinking Out Loud"
         file: blog.qmd
     right:
-      - icon: twitter
-        href: https://twitter.com/ollisaal
+      - icon: feather
+        href: https://bsky.app/profile/osaal.bsky.social
       - icon: github
         href: https://github.com/osaal
       - icon: envelope

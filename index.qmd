@@ -4,7 +4,7 @@ title: "Home"
 ::: {.column-margin}
 ![(c) Pelastusopisto, Santtu Tuomisto](images/profile2023.jpg)
 :::
-Welcome to my homepage! I am Oliver, a sociologist-cum-psychologist and graduate researcher at Åbo Akademi University in Turku, Finland.
+Welcome to my homepage! I am Oliver, a human scientist (in multiple ways) and graduate researcher at University of Jyväskylä, located in Helsinki, Finland.
 
 Navigate the pages through the top bar and the page-specific sidebars. A search function is available in the top-right corner.
 
