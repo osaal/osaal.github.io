@@ -17,7 +17,7 @@ about:
 ---
 
 ::: {#first-section}
-I'm a human researcher specialized in education, minorities, work and organization psychology, and security research. My broader academic interests are in modern quantitative social research, e.g., latent factor models and structural equation modeling, as well as open science and reproducibility. My free time is spent watching RuPaul's Drag Race, producing documentary films, and hobby programming.
+I'm a human researcher specialized in quantitative methods, work and organization psychology, and security research. My broader academic interests are in modern quantitative social research, e.g., latent factor models and structural equation modeling, as well as open science and reproducibility. My free time is spent watching RuPaul's Drag Race, producing documentary films, and hobby programming.
 
 ## Education
 
@@ -39,7 +39,7 @@ Thesis topic: Gender and ethnicity processes in the online role-playing game Wor
 
 ## Experience
 
-**Specialist** \| [Finnish Ministry of the Interior](https://intermin.fi/en/) <br/>
+**Senior Specialist** \| [Finnish Ministry of the Interior](https://intermin.fi/en/) <br/>
 Helsinki, Finland <br/>
 Full-time, civil servant <br/>
 2025 - current
@@ -71,7 +71,7 @@ Latin - beginner
 ## Public Service and Third Sector Activities
 
 [**Finnish Union of University Researchers**](https://tieteentekijat.fi/en/home/) \| Helsinki, Finland <br/>
-Member of the Young Researchers Committee (2023 - current)
+Member of the Young Researchers Committee (2023 - 2024)
 
 [**The Sociological Association at Åbo Akademi University**](https://anomiabo.wixsite.com/anomi?lang=en) \| Turku, Finland <br/>
 Chair of the board (2020, 2023 - current) <br/>

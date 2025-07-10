@@ -6,10 +6,10 @@ These pages contain my research, with publication links and other contents as av
 
 Please reference the original sources, not this website.
 
-*Updated 24 February 2025*
+*Updated 10 July 2025*
 
 ## Current Research Project
--   [Project on determining the financing structure of emergency services at the regional welfare counties](https://intermin.fi/) Specialist in research project at Finnish Ministry of the Interior. Financing by the Fire Safety Fund (Palosuojelurahasto).
+-   [Project on determining the service needs of emergency services at the regional welfare counties](https://intermin.fi/hankkeet/hankesivu?tunnus=SM013:00/2025) Senior specialist in research project at Finnish Ministry of the Interior. Financing by the Fire Safety Fund (Palosuojelurahasto).
 
 ## Past Research Projects
 
@@ -47,6 +47,8 @@ Saal, Oliver, Iida Silfverhuth & Konsta Huovinen. n.d. *Pelastajien ja ensihoita
 
 ## Conference Proceedings
 
+*Pelastustoimen palvelutarpeen määrittelyn tutkimushankkeen eteneminen \[Progress report of the research project for determining the service needs of emergency services at the regional welfare counties\]*. With Tiina Etelälahti and Jaana Määttälä. Emergency Services Research Days 2025, working group Communications and Information Leadership. 11 June 2025. Unpublished.
+
 *Pelastusalan ja ensihoidon kohtaaman epäasiallisen kohtelun muodot ja puuttumiskeinot: Valtakunnallisen kyselytutkimuksen tuloksia \[The Forms and Interventions for Inappropriate Behaviour in the Emergency Services and First Aid: Results from a national survey study\]*. Work Research Days 2024, working group Problematic Interactions in Work Life. 7 November 2024. Unpublished.
 
 *Yksilön riskikäsitysten ja omatoimisen varautumisen kausaalisuhteen merkitys kokonaisturvallisuudelle \[The Relevance of the Causal Connection between an Individual's Risk Perception and Self-Preparedness for Total Security\]*. Sociology Days 2024, working group Sociology of Safety and National Defense. 21 March 2024. *Sosiologia* *61*(2), 171.
@@ -66,6 +68,8 @@ Saal, Oliver, Iida Silfverhuth & Konsta Huovinen. n.d. *Pelastajien ja ensihoita
 *Evaluating the Effects of Globalisation on Work*. With Mika Helander. Sociology Days 2021, working group Global Sociology. 11 March 2021. *Sosiologia 58*(2), 180.
 
 ## Conference Organising
+
+Working group *Communications and Information Leadership* at the Emergency Services Research Days 2025, 11 June 2025, Kuopio, Finland. With Päivi Mäkelä (Pelastusopisto - Emergency Services Academy Finland). Link to conference website: <https://www.pelastusopisto.fi/tutkimus-ja-kehitys/pelastustoimen-tutkimuspaivat/pelastustoimen-tutkimuspaivat-2025/>
 
 Working group *Sociology of Security and National Defense* at the Sociology Days 2024, 21-22 March 2024, Kuopio, Finland. With Miina Kaarkoski (National Defense University). Link to conference website: <https://sosiologipaivat.fi/annual-conference-2024/>
 

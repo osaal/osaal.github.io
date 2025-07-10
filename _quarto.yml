@@ -44,6 +44,8 @@ website:
           file: research.qmd
         - text: "Master's Thesis"
           file: mathesis.qmd
+        - text: "Zero Tolerance"
+          file: zerotolerance.qmd
   cookie-consent: 
     type: express
     style: simple
