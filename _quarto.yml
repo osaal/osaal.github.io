@@ -5,6 +5,9 @@ project:
     port: 4200
     watch-inputs: true
 
+resources:
+- CNAME
+
 website:
   title: "Oliver Saal"
   
