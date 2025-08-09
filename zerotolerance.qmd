@@ -2,27 +2,27 @@
 title: "The Zero Tolerance project"
 ---
 **Title**: Emergency Services Zero Tolerance to Discrimination and Harassment - Fact or Fiction? <br/>
-**Year**: 2024-2025 <br/>
+**Year**: 2023-2025 <br/>
 **Institution**: Pelastusopisto - Emergency Services Academy Finland <br/>
 **Link**: <https://www.pelastusopisto.fi/tutkimus-ja-kehitys/hankkeet/pelastustoimen-nollatoleranssi-syrjinnalle-ja-hairinnalle-faktaa-vai-fiktiota/>
 
 # Project Information
 
-The Zero Tolerance project examined the prevalence of inappropriate and violent behaviour in Finland's rescue services and emergency medical care. The study was financed by the Finnish Fire Safety Fund as a 1.5-year research project conducted at Pelastusopisto.
+The Zero Tolerance project examined the prevalence of inappropriate and violent behaviour in Finland's emergency services and emergency medical care. The study was financed by the Finnish Fire Safety Fund as a 1.5-year research project conducted at Pelastusopisto.
 
-The research was divided into two parts: a systematic literature review on Finnish and European research into the prevalence and effects of inappropriate and violent behaviour in fire and rescue services, first aid, and emergency medical care; and a national survey study developed based on the literature review.
+The project was divided into two parts: a systematic literature review on Finnish and European research into the prevalence and effects of inappropriate and violent behaviour in emergency services, first aid, and emergency medical care; and a national survey study developed based on the literature review.
 
-The project conducted two workshops with external stakeholders. All Finnish rescue services, as well as related non-profit and governmental organizations, were invited to participate. Workshop 1 (spring of 2024) concerned the survey instrument developed by the research group based on the systematic literature review, and Workshop 2 (autumn/winter of 2024) concerned the policy recommendations developed by the research group based on the study results.
+The project conducted two workshops with external stakeholders. All Finnish emergency services, as well as related non-profit and governmental organizations, were invited to participate. Workshop 1 (spring of 2024) concerned the survey instrument based on the systematic literature review, and Workshop 2 (autumn/winter of 2024) concerned the policy recommendations based on the study results.
 
-The study found that up to half of survey respondents reported experiencing challenges in interaction situations in the past year, both from patients and customers as well as from colleagues and stakeholders. Inappropriate treatment and violence was found to have negative effects on both individuals and organizations, deteriorating employees' health, well-being, and job satisfaction, while increasing staff turnover and organizational expenses. The study further found that the utilization of systems meant for reporting inappropriate and violent behaviour was low and qualitatively varied, preventing organizations from fully understanding the scope and nature of the problem. Finally, the deifnitions and measurements of inappropriate and violent behaviour are underdeveloped, presenting a need for systematic instrument development and cross-cultural comparisons.
+The study found that up to half of survey respondents reported experiencing challenges in interaction situations in the past year, both from patients and customers as well as from colleagues and stakeholders. Inappropriate treatment and violence was found to have negative effects on both individuals and organizations, deteriorating employees' health, well-being, and job satisfaction, while increasing staff turnover and organizational expenses. The study further found that the utilization of systems meant for reporting inappropriate and violent behaviour was low and qualitatively varied, preventing organizations from fully understanding the scope and nature of the problem. Finally, the definitions and measurements of inappropriate and violent behaviour are underdeveloped, presenting a need for systematic instrument development and cross-cultural comparisons.
 
 # Roles and Responsibilities
 
-I were principal investigator and lead scientist on the project, with head of research Mimmi Tolvanen acting as supervisor and responsible researcher. My primary task was the complete organization, planning, and enacting of the research project, combined with all tasks related to project management, communications, and data management.
+I was principal investigator and lead scientist on the project, with head of research Mimmi Tolvanen acting as supervisor and responsible researcher. My primary task was the organization, planning, and execution of the research project, combined with all tasks related to project management, communications, and data management.
 
-Research assistants Iida Silfverhuth and Konsta Huovinen participated in the first half of the research project. Their tasks included co-planning and conducting parts of the systematic literature review, supporting communications and project management, and co-developing the survey instrument.
+Research assistants Iida Silfverhuth and Konsta Huovinen participated in the first half of the research project. Their tasks included co-planning and conducting the systematic literature review, supporting communications and project management, and co-developing the survey instrument.
 
-The full CREDIT taxonomy of participating researchers is available in the published research report, and translated to English as follows:
+The full CREDIT taxonomy of participating researchers is available in the published research report, and is translated to English as follows:
 
 -  Conceptualization: Saal, Silfverhuth, Huovinen, Tolvanen
 -  Data curation: Saal
@@ -45,15 +45,15 @@ The final report is available in Finnish (with an English abstract) at <https://
 
 Supporting research and appendices are available as an Open Science Framework repository at <https://osf.io/xguwn/>.
 
-An anonymized dataset will be made available at the Finnish Social Sciences Data Archive at <https://doi.org/10.60686/t-fsd3939>.
+An anonymized dataset is available at the Finnish Social Sciences Data Archive at <https://doi.org/10.60686/t-fsd3939>. Access is granted to researchers at Finnish institutions of higher learning by authentication, and to others by application, for research purposes only.
 
 Three peer-reviewed research publications are in the works or planned based on the project:
 
-1.  Saal, Silfverhuth, Huovinen, & Tolvanen. "Validation of Finnish and Swedish Language Instrument on Inappropriate and Violent Behaviour in the Rescue and Emergency Services". \[Original in Finnish\]. Registered report, under stage 2 peer review at the Finnish Centre for Registered Reports, see <https://www.jyu.fi/fi/tutkimus/julkaiseminen-jyvaskylan-yliopistossa/rekisteroidyt-tutkimusraportit> (short summary available in English).
+1.  Saal, Silfverhuth, Huovinen, & Tolvanen. "Validation of Finnish and Swedish Language Instrument on Inappropriate and Violent Behaviour in the Rescue and Emergency Services". \[Original in Finnish\]. Registered report. Available at: <https://www.jyu.fi/fi/tutkimus/julkaiseminen-jyvaskylan-yliopistossa/rekisteroidyt-tutkimusraportit> (short summary available in English).
 2.  Saal, Silfverhuth, & Huovinen. "Inappropriate and Violent Behaviour in the Rescue and Emergency Services: A Conceptual Analysis and Meta-Analysis of Prevalence Based on a Systematic Literature Review". \[Original in Finnish\]. Under peer review at *Työelämän tutkimus*.
 3.  Saal, Tolvanen, & Taru Feldt. "The Relation of Internal and External Experiences of Violence, Burnout, and Work Change Intentions in Finnish Fire-fighters and Paramedics: A Structural Equation Model of Mediation". Work-in-progress.
 
-Papers 1 and 2 are expected for publication in 2025, and Paper 3 in 2026. All three papers comprise my doctoral dissertation in Psychology (PhD) at the University of Jyväskylä.
+Paper 1 was completed in 2025 and will be published in *Psykologia* in the autumn of 2025. Paper 2 is expected for publication in 2025, and Paper 3 in 2026. All three papers comprise my doctoral dissertation in Psychology (PhD) at the University of Jyväskylä.
 
 The ongoing research project was presented at the following conferences: Sociology Days 2024 (Saal, Silfverhuth, & Huovinen), Work Research Days 2024 (Saal).
 
