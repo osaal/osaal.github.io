@@ -86,7 +86,7 @@ Youth representative in the Porvoo municipal council Swedish educational section
 
 ## Technical Skills
 
-**Programming**: R \| C++ \| Rust \| Python \| HTML \| CSS
+**Programming**: R \| Rust \| Python \| SQL
 
 **Media production**: Photoshop \| Lightroom \| Premiere Pro \| After Effects \| Audition \| DaVinci Resolve
 
