@@ -4,7 +4,7 @@ text: "Curriculum Vitae"
 about:
   id: first-section
   template: trestles
-  image: images/profile2023.jpg
+  image: images/profile2026.jpg
   links:
     - text: Bluesky
       href: https://bsky.app/profile/osaal.bsky.social
@@ -17,7 +17,7 @@ about:
 ---
 
 ::: {#first-section}
-I'm a human researcher specialized in quantitative methods, work and organization psychology, and security research. My broader academic interests are in modern quantitative social research, e.g., latent factor models and structural equation modeling, as well as open science and reproducibility. My free time is spent watching RuPaul's Drag Race, producing documentary films, and hobby programming.
+I'm a human researcher specialized in quantitative methods, work and organization psychology, and security research. My broader academic interests are in modern quantitative social research, e.g., latent factor models and structural equation modeling, as well as open science and reproducibility. My free time is spent hobby programming and AFKing XP in OSRS.
 
 ## Education
 
@@ -39,12 +39,16 @@ Thesis topic: Gender and ethnicity processes in the online role-playing game Wor
 
 ## Experience
 
+**Senior Researcher** \| [Pelastusopisto - Emergency Services Academy Finland](https://pelastusopisto.fi/en/) <br/>
+Full-time, civil servant <br />
+2026 - current
+
 **Senior Specialist** \| [Finnish Ministry of the Interior](https://intermin.fi/en/) <br/>
 Helsinki, Finland <br/>
 Full-time, civil servant <br/>
-2025 - current
+2025 - 2026
 
-**Researcher** \| [Pelastusopisto - Emergency Services Academy Finland](https://pelastusopisto.fi/en/) <br/>
+**Researcher** \| Pelastusopisto <br/>
 Kuopio, Finland <br/>
 Full-time, civil servant <br/>
 2022 - 2025
@@ -74,7 +78,7 @@ Latin - beginner
 Member of the Young Researchers Committee (2023 - 2024)
 
 [**The Sociological Association at Åbo Akademi University**](https://anomiabo.wixsite.com/anomi?lang=en) \| Turku, Finland <br/>
-Chair of the board (2020, 2023 - current) <br/>
+Chair of the board (2020, 2023 - 2025) <br/>
 Member of the anniversary gala committee (2021) <br/>
 Secretary and PR manager (2019) <br/>
 
@@ -90,7 +94,7 @@ Youth representative in the Porvoo municipal council Swedish educational section
 
 **Media production**: Photoshop \| Lightroom \| Premiere Pro \| After Effects \| Audition \| DaVinci Resolve
 
-**Statistical software**: SPSS \| R \| Excel \| FACTOR \| GraphViz \| SocNetV
+**Statistical software**: SPSS \| R \| Excel \| FACTOR \| GraphViz \| SocNetV \| QGIS
 
 ## Other
 
