@@ -8,3 +8,4 @@ posts/samplepost.qmd
 docs/posts/samplepost.html
 posts/NOGIT_*
 docs/posts/NOGIT_*
+**/*.quarto_ipynb
