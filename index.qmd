@@ -2,7 +2,7 @@
 title: "Home"
 ---
 ::: {.column-margin}
-![(c) Pelastusopisto, Santtu Tuomisto](images/profile2023.jpg)
+![(c) Pelastusopisto, Santtu Tuomisto](images/profile2026.jpg)
 :::
 Welcome to my homepage! I am Oliver, a human scientist (in multiple ways) and graduate researcher at University of Jyväskylä, located in Helsinki, Finland.
 
