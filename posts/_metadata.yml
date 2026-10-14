@@ -1,5 +1,0 @@
-freeze: true
-output:
-  html:
-    reference-location: margin
-    citation-location: margin

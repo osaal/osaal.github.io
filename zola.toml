@@ -1,0 +1,109 @@
+base_url = "https://osaal.dev"
+title = "Oliver Aspelin-Saal"
+theme = "kaito"
+
+output_dir = "docs"
+compile_sass = true
+build_search_index = false
+feed_filenames = ["atom.xml"]
+ignored_content = [
+    "blog/drafts/**",
+]
+ignored_static = [
+    "saalpuustinen2023_submitted_prereview_20230618.pdf",
+]
+generate_robots_txt = true
+
+[markdown]
+bottom_footnotes = true
+github_alerts = true
+insert_anchor_links = "none"
+# TODO: Use anchor links once you figure out a better visual than the default chain emoji...
+
+[extra]
+site_title = "Oliver Aspelin-Saal"
+copyright_holder = "Oliver Aspelin-Saal"
+feed_path = "/blog"
+footer_links = [
+    { name = "home", path = "/" },
+    { name = "research", path = "/research" },
+    { name = "teaching", path = "/teaching" },
+    { name = "blog", path = "/blog" },
+]
+
+[extra.resume]
+name = "Oliver Aspelin-Saal"
+contact = [
+    { text = "email", url = "mailto:oliver@osaal.dev" },
+    { text = "bluesky", url = "https://bsky.app/profile/osaal.bsky.social" },
+    { text = "orcid", url = "https://orcid.org/0000-0002-4870-0458" },
+]
+summary = ""
+skills = ["Statistical Analysis", "EU Data Protection Regulation", "Avant-Garde Scientific Methodology"]
+
+nav_links = [
+    { name = "research", path = "/research" },
+    { name = "teaching", path = "/teaching" },
+    { name = "blog", path = "/blog" },
+    { name = "github*", url = "https://github.com/osaal" },
+]
+
+[[extra.resume.experience]]
+company = "Emergency Services Academy Finland - Pelastusopisto"
+positions = [
+    { title = "Senior Researcher", start = "2026", end = "Present", items = [
+        "Team lead for research team 'Foresight and Operational Environment in Rescue Services'",
+        "PI for multiple research and development projects",
+        "Independent research on civil protective behaviour",
+        "Research funding acquisition",
+        "Editorial assistant for Pelastus- ja turvallisuustutkimus (Journal of Rescue and Safety Science)",
+    ] },
+    { title = "Researcher", start = "2022", end = "2025", items = [
+        "Finnish Emergency Services Attitudes 2023 report",
+        "Research project on inappropriate and violent behaviour in the rescue services",
+        "Teaching quantitative and qualitative analysis at BA level",
+    ] },
+    { title = "Research Assistant", start = "2020", end = "2021", items = [
+        "Finnish Emergency Services Attitudes 2020 report",
+    ] },
+]
+
+[[extra.resume.experience]]
+company = "Ministry of the Interior, Finland"
+positions = [
+    { title = "Senior Specialist", start = "2025", end = "2026", items = [
+        "Research project on determining service needs of rescue services",
+        "Development of data collection tools in QGIS using Python and Qt",
+    ] },
+]
+
+[[extra.resume.experience]]
+company = "Åbo Akademi University"
+positions = [
+    { title = "Doctoral Researcher", start = "2020", end = "2024", items = [
+        "Externally funded research for D.Soc.Sci in Sociology",
+        "Funding from the Kone Foundation and the Waldemar von Frenckell foundation",
+        "Course implementation in science and technology studies for MA level",
+        "Teaching quantitative methods, sociology of education, introductory sociology at BA and MA levels",
+    ] },
+    { title = "Research Assistant", start = "2019", end = "2021", items = [
+        "Assisting in editing the Annals of the Westermarck Society",
+        "Assisting curriculum design",
+        "Group interviews",
+    ] },
+]
+
+[[extra.resume.education]]
+school = "University of Jyväskylä"
+date = "2025 - Present"
+degree = """PhD in Work and Organizational Psychology | Thesis on inappropriate and violent behaviour in the emergency services"""
+
+[[extra.resume.education]]
+school = "Åbo Akademi University"
+date = "2018 - 2020"
+degree = "M.Soc.Sci in Sociology | Thesis on epistemic profiles of Finnish university students"
+
+[[extra.resume.education]]
+school = "Åbo Akademi University"
+date = "2015 - 2018"
+degree = "B.Soc.Sci in Sociology, minor in English language and literature | Thesis on gender and ethnicity processes in World of Warcraft"
