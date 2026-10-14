@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://osaal.dev/</loc>
+    </url>
+    <url>
+        <loc>https://osaal.dev/blog/</loc>
+    </url>
+    <url>
+        <loc>https://osaal.dev/blog/among-the-firefighters/</loc>
+        <lastmod>2023-06-21</lastmod>
+    </url>
+    <url>
+        <loc>https://osaal.dev/blog/fuurt-ecr-meeting/</loc>
+        <lastmod>2023-03-21</lastmod>
+    </url>
+    <url>
+        <loc>https://osaal.dev/blog/hsl-ja-tulosvastuu/</loc>
+        <lastmod>2023-04-13</lastmod>
+    </url>
+    <url>
+        <loc>https://osaal.dev/blog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://osaal.dev/research/</loc>
+    </url>
+    <url>
+        <loc>https://osaal.dev/teaching/</loc>
+    </url>
+</urlset>

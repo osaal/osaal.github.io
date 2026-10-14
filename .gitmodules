@@ -1,0 +1,3 @@
+[submodule "themes/kaito"]
+	path = themes/kaito
+	url = https://git.colorized.life/demo.kaitokawasaka.net.git
